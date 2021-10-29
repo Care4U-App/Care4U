@@ -4,7 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidStudioProjects/Care4U/app/src/main/res/drawable/background.xml" value="0.2265" />
+        <entry key="..\:/AndroidStudioProjects/Care4U/app/src/main/res/drawable/pink_out_line.xml" value="0.1745" />
+        <entry key="..\:/AndroidStudioProjects/Care4U/app/src/main/res/drawable/toggle_widget_background.xml" value="0.158" />
+        <entry key="..\:/AndroidStudioProjects/Care4U/app/src/main/res/drawable/toggle_widget_button.xml" value="0.158" />
+        <entry key="..\:/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_live_covid_cases.xml" value="0.25416666666666665" />
         <entry key="..\:/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_login_page.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/Care4U/app/src/main/res/layout/fragment_sign_up.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/drawable/bg_grad.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_result_safe.xml" value="0.2" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_scan_qr.xml" value="0.2" />
