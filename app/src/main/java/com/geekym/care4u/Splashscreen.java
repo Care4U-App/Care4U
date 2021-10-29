@@ -11,6 +11,8 @@ import android.os.Handler;
 import android.widget.Toast;
 import android.window.SplashScreen;
 
+import com.geekym.care4u.CovidCases.WorldDataActivity;
+
 public class Splashscreen extends AppCompatActivity {
     //Here we save onBoardingScreen status
     SharedPreferences onBoardingScreen;

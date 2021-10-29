@@ -16,6 +16,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.geekym.care4u.CovidCases.WorldDataActivity;
+
 public class Homescreen extends AppCompatActivity {
 
     //Declaring Variables
@@ -57,7 +59,7 @@ public class Homescreen extends AppCompatActivity {
         tracker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Homescreen.this, Live_Covid_Cases.class);
+                Intent intent = new Intent(Homescreen.this, WorldDataActivity.class);
                 startActivity(intent);
             }
         });
