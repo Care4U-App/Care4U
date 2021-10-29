@@ -16,9 +16,9 @@ import android.widget.TextView;
 
 public class OBS extends AppCompatActivity {
 
+    //Declaring Variables
     ViewPager viewPager;
     LinearLayout dotsLayout;
-
     SliderAdapter sliderAdapter;
     TextView[] dots;
     Button getstarted;
@@ -31,6 +31,7 @@ public class OBS extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_obs);
 
+        //Initializing variables with IDs
         viewPager = findViewById(R.id.slider);
         dotsLayout = findViewById(R.id.dots);
         getstarted = findViewById(R.id.get_started_btn);
@@ -38,7 +39,7 @@ public class OBS extends AppCompatActivity {
         sliderAdapter = new SliderAdapter(this);
         viewPager.setAdapter(sliderAdapter);
 
-        addDots(0);
+        addDots(0); //Slider Position
         viewPager.addOnPageChangeListener(changeListener);
 
         getstarted.setOnClickListener(new View.OnClickListener() {
@@ -51,29 +52,24 @@ public class OBS extends AppCompatActivity {
         });
     }
 
-    public void skip(View view){
+    public void skip(View view){  //When skipped
         startActivity(new Intent(this, Login_Page.class));
         finish();
     }
-    public void next(View view){
 
+    public void next(View view){ //Next Slide
         viewPager.setCurrentItem(currentPosition + 1);
     }
 
     private void addDots(int position){
-
         dots = new TextView[3];
         dotsLayout.removeAllViews();
-
         for (int i=0;i<dots.length;i++){
-
             dots[i] = new TextView(this);
             dots[i].setText(Html.fromHtml("&#8226;"));
             dots[i].setTextSize(35);
-
             dotsLayout.addView(dots[i]);
         }
-
         if (dots.length>0){
             dots[position].setTextColor(getResources().getColor(R.color.white));
         }
@@ -82,15 +78,12 @@ public class OBS extends AppCompatActivity {
     ViewPager.OnPageChangeListener changeListener = new ViewPager.OnPageChangeListener() {
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
         }
 
         @Override
         public void onPageSelected(int position) {
-
             addDots(position);
             currentPosition = position;
-
             if (position == 0){
                 getstarted.setVisibility(View.INVISIBLE);
             }else if (position == 1){
@@ -104,7 +97,6 @@ public class OBS extends AppCompatActivity {
 
         @Override
         public void onPageScrollStateChanged(int state) {
-
         }
     };
 

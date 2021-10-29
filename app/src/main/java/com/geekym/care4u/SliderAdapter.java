@@ -12,7 +12,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewpager.widget.PagerAdapter;
 
 public class SliderAdapter extends PagerAdapter {
-
+    //Declaring Variables
     Context context;
     LayoutInflater layoutInflater;
 
@@ -20,22 +20,20 @@ public class SliderAdapter extends PagerAdapter {
         this.context = context;
     }
 
-    // Images , Headings and Description to be added
-
-    int images[] = {
+    int images[] = {   //Images to be displayed
             R.drawable.slide1,
             R.drawable.slide2,
             R.drawable.slide3
     };
 
-    int headings[] ={
+    int headings[] ={   //Heading Lines of Slides
 
             R.string.first_slide_title,
             R.string.second_slide_title,
             R.string.third_slide_title
     };
 
-    int description[] = {
+    int description[] = {       //Description of Slides
 
             R.string.first_slide_desc,
             R.string.second_slide_dec,
@@ -55,20 +53,15 @@ public class SliderAdapter extends PagerAdapter {
     @NonNull
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
-
         layoutInflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
         View view = layoutInflater.inflate(R.layout.slides_layout,container,false);
-
         ImageView imageView = view.findViewById(R.id.slider_image);
         TextView heading = view.findViewById(R.id.slider_heading);
         TextView desc = view.findViewById(R.id.slider_des);
-
         imageView.setImageResource(images[position]);
         heading.setText(headings[position]);
         desc.setText(description[position]);
-
         container.addView(view);
-
         return view;
     }
 
