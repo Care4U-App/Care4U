@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Care4U</string>
+
+    <!--OnBoarding Screen-->
+
+    <!--Title-->
+    <string name="first_slide_title">CaringYou</string>
+    <string name="second_slide_title">Want to self Assess?</string>
+    <string name="third_slide_title">Safety Comes First</string>
+
+    <!--Description-->
+
+    <string name="first_slide_desc">An "All-You-Need" Covid-19 app for your daily life</string>
+    <string name="second_slide_dec">Self Assess yourself at home!</string>
+    <string name="third_slide_dec">Follow Safety tips and Immune Boosting Diet</string>
 </resources>
