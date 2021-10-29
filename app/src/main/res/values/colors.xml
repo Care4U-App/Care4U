@@ -7,7 +7,20 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="transparent">#00ffffff</color>
     <color name="Blue">#1dcdfe</color>
-    <color name="Dark_Blue">#0482A5</color>
+
+    <!--For Live Covid Cases-->
+    <color name="cardBackground">#FE1D1D2F</color>
+    <color name="bg_light">#3F5873</color>
+    <color name="gray">#c4c4c4</color>
+    <color name="orange">#FF7100</color>
+    <color name="yellow">#FBC233</color>
+    <color name="blue_pie">#007afe</color>
+    <color name="red_pie">#F6404F</color>
+    <color name="green_pie">#08a045</color>
+    <color name="red">#F6404F</color>
+    <color name="blue">#78DBF3</color>
+    <color name="green">#7EC544</color>
+    <color name="pink">#F37585</color>
+
 </resources>

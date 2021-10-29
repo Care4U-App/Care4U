@@ -2,6 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.geekym.care4u">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
@@ -10,6 +19,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Care4U">
         <activity
+            android:name=".CovidCases.WorldDataActivity"
+            android:exported="true"/>
+        <activity android:name=".CovidCases.CountrywiseDataActivity"
+            android:exported="true"/>
+        <activity android:name=".CovidCases.data.PerCountryData"
+            android:exported="true"/>
+        <activity
             android:name=".Self_Assessment_Result"
             android:exported="false" />
         <activity
@@ -17,9 +33,6 @@
             android:exported="false" />
         <activity
             android:name=".Self_Assessment"
-            android:exported="false" />
-        <activity
-            android:name=".Live_Covid_Cases"
             android:exported="false" />
         <activity
             android:name=".Login_Page"
@@ -32,10 +45,10 @@
         </activity>
         <activity
             android:name=".Vaccine_Details"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".User_Details"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Vaccine_Slot"
             android:exported="false" />
@@ -50,7 +63,10 @@
             android:exported="false" />
         <activity
             android:name=".OBS"
-            android:exported="false" />
+            android:exported="true" />
+        <activity
+            android:name=".Homescreen"
+            android:exported="true"/>
         <activity
             android:name=".Splashscreen"
             android:exported="true">
@@ -60,6 +76,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
