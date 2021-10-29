@@ -7,4 +7,135 @@
     tools:context=".User_Details"
     android:background="@drawable/background">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat"
+        android:text="CaringYou"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Enter your details"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="336dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/stroke_button"
+        android:gravity="center"
+        android:hint="Enter your Name"
+        android:includeFontPadding="true"
+        android:inputType="textPersonName"
+        android:textColorHint="#BDBDBD"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/age_input"
+        android:layout_width="336dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/stroke_button"
+        android:gravity="center"
+        android:hint="Enter your Age"
+        android:includeFontPadding="true"
+        android:inputType="numberDecimal"
+        android:textColorHint="#BDBDBD"
+        app:layout_constraintEnd_toEndOf="@+id/name_input"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/name_input"
+        app:layout_constraintTop_toBottomOf="@+id/name_input" />
+
+    <EditText
+        android:id="@+id/height_input"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+
+        android:layout_marginTop="40dp"
+        android:background="@drawable/stroke_button"
+        android:gravity="center"
+        android:hint="Height in cm"
+        android:includeFontPadding="true"
+        android:inputType="numberDecimal"
+        android:textColorHint="#BDBDBD"
+        app:layout_constraintEnd_toStartOf="@+id/weight_input"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/age_input"
+        app:layout_constraintTop_toBottomOf="@+id/age_input" />
+
+
+    <EditText
+        android:id="@+id/weight_input"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/stroke_button"
+        android:gravity="center"
+        android:hint="Weight in kg"
+        android:includeFontPadding="true"
+        android:inputType="numberDecimal"
+        android:textColorHint="#BDBDBD"
+        app:layout_constraintEnd_toEndOf="@+id/age_input"
+        app:layout_constraintTop_toBottomOf="@+id/age_input" />
+
+    <EditText
+        android:id="@+id/bpm_input"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/stroke_button"
+        android:gravity="center"
+        android:hint="Heart BPM"
+        android:includeFontPadding="true"
+        android:inputType="numberDecimal"
+        android:textColorHint="#BDBDBD"
+        app:layout_constraintEnd_toEndOf="@+id/weight_input"
+        app:layout_constraintStart_toStartOf="@+id/height_input"
+        app:layout_constraintTop_toBottomOf="@+id/age_input" />
+
+    <Button
+        android:id="@+id/conf"
+        android:layout_width="272dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/montserrat"
+        android:text="Confirm"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bpm_input"
+        app:layout_constraintStart_toStartOf="@+id/bpm_input"
+        app:layout_constraintTop_toBottomOf="@+id/bpm_input"
+        app:layout_constraintVertical_bias="0.673" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
