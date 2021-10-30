@@ -8,11 +8,17 @@
         <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/drawable/button.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/drawable/stroke_but.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/drawable/stroke_button.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_countrywise_data.xml" value="0.33" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_gen_qr.xml" value="0.2" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_homescreen.xml" value="0.25" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_per_country_data.xml" value="0.33" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_result_safe.xml" value="0.2" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_scan_qr.xml" value="0.2" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_self_assessment_result.xml" value="0.2" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_user_details.xml" value="0.25" />
-        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_vaccine_details.xml" value="0.2" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_vaccine_details.xml" value="0.33" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_world_data.xml" value="0.2" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/countrywise_list_layout.xml" value="0.5250696378830083" />
       </map>
     </option>
   </component>

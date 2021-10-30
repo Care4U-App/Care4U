@@ -4,6 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Result_Safe">
+    tools:context=".Result_Safe"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="175dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="156dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descnone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="The User is Not Vaccinated\nor\nThe user has not uploaded his certificate"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/statusnone"
+        app:layout_constraintStart_toStartOf="@+id/statusnone"
+        app:layout_constraintTop_toBottomOf="@+id/statusnone" />
+
+    <TextView
+        android:id="@+id/statusnone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Status: UNSAFE!"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/stathome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="Home"
+        android:textAllCaps="false"
+        android:background="@drawable/stroke_button"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/descnone"
+        app:layout_constraintStart_toStartOf="@+id/descnone"
+        app:layout_constraintTop_toBottomOf="@+id/descnone"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

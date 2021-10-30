@@ -32,6 +32,7 @@ public class Vaccine_Details extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_vaccine_details);
 
         //Initializing variables with IDs
