@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/Update_user"
+        android:title="Update User Details"/>
+    <item android:id="@+id/Update_vaccine"
+        android:title="Update Vaccine Details"/>
+    <item android:id="@+id/Reset"
+        android:title="Reset All Data"/>
+</menu>

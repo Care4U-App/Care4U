@@ -10,16 +10,18 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.geekym.care4u.CovidCases.WorldDataActivity;
 import com.geekym.care4u.VaccineSlot.Vaccine_Slot;
 
-public class Homescreen extends AppCompatActivity {
+public class Homescreen extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
 
     //Declaring Variables
     Button lout, QR, Help;
@@ -159,5 +161,57 @@ public class Homescreen extends AppCompatActivity {
         });
         AlertDialog alertDialog=alertDialogBuilder.create();
         alertDialog.show();
+    }
+    // For opening the pop-up menu when clicked
+    public  void showPopup(View v){
+        PopupMenu popupMenu = new PopupMenu(this, v);
+        popupMenu.setOnMenuItemClickListener(this);
+        popupMenu.inflate(R.menu.popup_menu);
+        popupMenu.show();
+    }
+    // For thw working of the buttons which are inside the pop-up menu
+    @Override
+    public boolean onMenuItemClick(MenuItem menuItem) {
+        switch (menuItem.getItemId()) {
+            case R.id.Update_user:
+                SharedPreferences preferences = getSharedPreferences("checkbox", MODE_PRIVATE);
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.putString("remember", "false");
+                editor.apply();
+                Intent b = new Intent(Homescreen.this, User_Details.class);
+                startActivity(b);
+                finishAffinity();
+                break;
+
+            case R.id.Update_vaccine:
+                SharedPreferences preferences1 = getSharedPreferences("save", MODE_PRIVATE);
+                SharedPreferences.Editor editor1 = preferences1.edit();
+                editor1.putString("save1", "false");
+                editor1.apply();
+                Intent c = new Intent(Homescreen.this, Vaccine_Details.class);
+                startActivity(c);
+                finishAffinity();
+                break;
+
+            case R.id.Reset:
+                SharedPreferences preferences2 = getSharedPreferences("checkbox", MODE_PRIVATE);
+                SharedPreferences preferences3 = getSharedPreferences("save", MODE_PRIVATE);
+                SharedPreferences.Editor editor2 = preferences2.edit();
+                SharedPreferences.Editor editor3 = preferences3.edit();
+                editor2.putString("remember", "false");
+                editor3.putString("save1", "false");
+                preferences2.edit().remove("checkbox").commit();
+                preferences3.edit().remove("save").commit();
+                editor2.apply();
+                editor3.apply();
+                Intent d = new Intent(Homescreen.this, Login_Page.class);
+                startActivity(d);
+                finishAffinity();
+                break;
+
+            default:
+                return false;
+        }
+        return false;
     }
 }

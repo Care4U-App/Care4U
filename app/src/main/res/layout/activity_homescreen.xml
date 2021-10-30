@@ -287,6 +287,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="27dp"
+            android:layout_height="28dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="27dp"
+            android:background="@drawable/menu"
+            android:onClick="showPopup"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
         <Button
             android:id="@+id/logout"
             android:layout_width="80dp"
