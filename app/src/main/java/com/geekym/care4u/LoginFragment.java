@@ -1,6 +1,9 @@
 package com.geekym.care4u;
 
+import static android.content.Context.MODE_PRIVATE;
+
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -12,6 +15,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -28,6 +32,7 @@ public class LoginFragment extends Fragment {
 
     private FirebaseAuth Auth;
     private ProgressBar progressBar;
+    private CheckBox remember;
 
     View view;
     EditText email,pass;
@@ -43,7 +48,9 @@ public class LoginFragment extends Fragment {
         pass = getView().findViewById(R.id.loginpass);
         login = getView().findViewById(R.id.btnlogin);
         frgtpass = getView().findViewById(R.id.forgetpass);
+        remember = getView().findViewById(R.id.checkBox);
         progressBar = getView().findViewById(R.id.progressBar2);
+
 
         frgtpass.setOnClickListener(new View.OnClickListener() {
             @Override

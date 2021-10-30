@@ -4,9 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Aritra GS/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_gen_qr.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/Aritra GS/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_homescreen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Aritra GS/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_login_page.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Aritra GS/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_scan_qr.xml" value="0.15185185185185185" />
         <entry key="..\:/Users/Aritra GS/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_self_assessment.xml" value="0.1824074074074074" />
         <entry key="..\:/Users/Aritra GS/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_self_assessment_result.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Aritra GS/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_user_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Aritra GS/AndroidStudioProjects/Care4U/app/src/main/res/layout/fragment_login.xml" value="0.264" />
+        <entry key="..\:/Users/Aritra GS/AndroidStudioProjects/Care4U/app/src/main/res/layout/fragment_sign_up.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/drawable/background.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/drawable/bg_grad.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/drawable/button.xml" value="0.21614583333333334" />
