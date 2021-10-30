@@ -8,7 +8,9 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature android:name="android.hardware.camera" />
+
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
@@ -19,12 +21,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Care4U">
         <activity
+            android:name=".ForgetPass"
+            android:exported="false" />
+        <activity
             android:name=".CovidCases.WorldDataActivity"
-            android:exported="true"/>
-        <activity android:name=".CovidCases.CountrywiseDataActivity"
-            android:exported="true"/>
-        <activity android:name=".CovidCases.data.PerCountryData"
-            android:exported="true"/>
+            android:exported="true" />
+        <activity
+            android:name=".CovidCases.CountrywiseDataActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CovidCases.data.PerCountryData"
+            android:exported="true" />
         <activity
             android:name=".Self_Assessment_Result"
             android:exported="false" />
@@ -66,7 +73,7 @@
             android:exported="true" />
         <activity
             android:name=".Homescreen"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".Splashscreen"
             android:exported="true">
