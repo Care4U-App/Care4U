@@ -49,7 +49,7 @@ public class Splashscreen extends AppCompatActivity {
                     finish();
                     //After first time it will take the user to Login_Page
                 }else{
-                    Intent i=new Intent(Splashscreen.this, User_Details.class);
+                    Intent i=new Intent(Splashscreen.this, Login_Page.class);
                     startActivity(i);
                     finish();
                 }

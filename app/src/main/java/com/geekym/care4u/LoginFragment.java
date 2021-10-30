@@ -87,7 +87,7 @@ public class LoginFragment extends Fragment {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()){
                                 progressBar.setVisibility(View.GONE);
-                                Intent intent2 = new Intent(getActivity(),Homescreen.class);
+                                Intent intent2 = new Intent(getActivity(),User_Details.class);
                                 startActivity(intent2);
                                 Animatoo.animateFade(getContext());
                                 getActivity().finishAffinity();

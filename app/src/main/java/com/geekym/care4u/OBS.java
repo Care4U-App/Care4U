@@ -45,7 +45,7 @@ public class OBS extends AppCompatActivity {
         getstarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(OBS.this,User_Details.class);
+                Intent intent = new Intent(OBS.this,Login_Page.class);
                 startActivity(intent);
                 finish();
             }
@@ -53,7 +53,7 @@ public class OBS extends AppCompatActivity {
     }
 
     public void skip(View view){  //When skipped
-        startActivity(new Intent(this, User_Details.class));
+        startActivity(new Intent(this, Login_Page.class));
         finish();
     }
 

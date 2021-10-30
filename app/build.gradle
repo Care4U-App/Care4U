@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -46,4 +47,16 @@ dependencies {
 
     // VaccineDetails
     implementation 'com.itextpdf:itextg:5.5.10'
+
+    //QR Code
+    implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.3'
+    implementation 'com.karumi:dexter:6.2.2'
+    implementation 'com.budiyev.android:code-scanner:2.1.0'
+
+    //Firebase
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-database:20.0.2'
+
+    // Animate Slide Left Right
+    implementation 'com.github.mohammadatif:Animatoo:master'
 }
