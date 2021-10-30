@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:backgroundTintMode="screen"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/CenterName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/hospital"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:text="Name"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/CenterLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CenterName"
+            android:drawableLeft="@drawable/location"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:text="Location"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/VaccineTiming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CenterLocation"
+            android:drawableLeft="@drawable/clock"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:text="Time"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/VaccineTiming"
+            android:padding="4dp"
+            android:id="@+id/CardBottom1"
+            >
+            <TextView
+                android:id="@+id/VaccineName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Vaccine name"
+                android:drawablePadding="4dp"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/vaccine"
+                />
+
+            <TextView
+                android:id="@+id/FeeType"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Fees"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:padding="3dp"
+
+                />
+
+            <TextView
+                android:id="@+id/AgeLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Age Limit"
+                android:drawablePadding="4dp"
+                android:padding="3dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CardBottom1"
+            android:padding="4dp"
+            >
+
+
+            <TextView
+                android:id="@+id/VaccineAvailability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Availability"
+                android:drawablePadding="4dp"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/VaccineAvailabilityDose1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dose 1: "
+                android:drawablePadding="4dp"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/VaccineAvailabilityDose2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dose 2 : "
+                android:drawablePadding="4dp"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

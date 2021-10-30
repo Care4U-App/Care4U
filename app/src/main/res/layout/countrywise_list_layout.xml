@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_marginBottom="5dp"
     android:elevation="0dp"
-    app:cardBackgroundColor="@color/Blue"
+    app:cardBackgroundColor="@color/white"
     app:cardCornerRadius="8dp"
     android:layout_margin="5dp"
     app:cardMaxElevation="0dp">
@@ -23,7 +23,7 @@
             android:layout_width="25dp"
             android:layout_height="wrap_content"
             android:text="340."
-            android:textColor="#fff"
+            android:textColor="@color/black"
             android:layout_weight="0.2"
             android:textSize="14sp"/>
 
@@ -50,7 +50,7 @@
             android:gravity="start"
             android:lines="1"
             android:text="India"
-            android:textColor="#fff"
+            android:textColor="@color/black"
             android:textSize="15sp" />
 
         <TextView
