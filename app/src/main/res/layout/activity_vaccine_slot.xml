@@ -17,7 +17,7 @@
         android:layout_marginRight="18dp"
         android:layout_toStartOf="@id/ButtonSearch"
         android:layout_toLeftOf="@id/ButtonSearch"
-        android:hint="Enter Pincode"
+        android:hint="Search by Pincode"
         android:inputType="number"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />

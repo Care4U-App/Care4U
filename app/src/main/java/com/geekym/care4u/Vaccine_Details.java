@@ -55,7 +55,7 @@ public class Vaccine_Details extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Vaccine_Details.this, Homescreen.class);
                 if(Flag==0){                //This means no PDF is selected
-                    Toast.makeText(Vaccine_Details.this, "You've not uploaded your Covid Vaccine Certificate", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Vaccine_Details.this, "Not Verified!", Toast.LENGTH_SHORT).show();
                     status = "None";
                     SharedPreferences.Editor editor = st.edit();
                     editor.putString("status", status);
@@ -63,7 +63,7 @@ public class Vaccine_Details extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 }else  if(Flag==1) {        //This means 1st Dose Vaccination Certificate if selected
-                    Toast.makeText(Vaccine_Details.this, "You're Partially Vaccinated", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Vaccine_Details.this, "Verified! Partially Vaccinated", Toast.LENGTH_SHORT).show();
                     status = "Half";
                     SharedPreferences.Editor editor = st.edit();
                     editor.putString("status", status);
@@ -71,7 +71,7 @@ public class Vaccine_Details extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 }else if(Flag==2){          //This means 2nd Dose Vaccination Certificate if selected
-                    Toast.makeText(Vaccine_Details.this, "You're fully Vaccinated", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Vaccine_Details.this, "Verified! Fully Vaccinated", Toast.LENGTH_SHORT).show();
                     status = "Full";
                     SharedPreferences.Editor editor = st.edit();
                     editor.putString("status", status);

@@ -60,6 +60,7 @@
             android:fontFamily="@font/montserrat"
             android:text="Care4U"
             android:textSize="25dp"
+            android:layout_marginBottom="10dp"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="@+id/imageView2"
             app:layout_constraintStart_toStartOf="@+id/imageView2"
@@ -367,7 +368,7 @@
                     android:layout_width="70dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/vaccine">
+                    android:src="@drawable/covid">
 
                 </ImageView>
 
@@ -712,6 +713,7 @@
             android:backgroundTint="@color/white"
             android:layout_gravity="center"
             android:padding="5dp"
+            android:layout_marginBottom="30dp"
             android:layout_marginTop="8dp"
             app:cardCornerRadius="10dp"
             app:cardElevation="5dp">
@@ -786,29 +788,9 @@
                         android:textAlignment="gravity"
                         android:textColor="@color/black"
                         android:textSize="11dp">
-
                     </TextView>
                 </RelativeLayout>
-
             </LinearLayout>
-
-
         </androidx.cardview.widget.CardView>
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="Copyright @GeekyMusketeers 2021"
-            android:textColor="#73FFFFFF"
-            android:layout_marginBottom="32dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
-            app:layout_constraintStart_toStartOf="@+id/linearLayout3"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-            />
-
     </LinearLayout>
-
 </ScrollView>

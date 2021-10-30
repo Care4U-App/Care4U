@@ -14,6 +14,7 @@ public class Safety_Tips extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_safety_tips);
 
         Home = findViewById(R.id.home);

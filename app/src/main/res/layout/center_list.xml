@@ -2,15 +2,17 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
     android:backgroundTintMode="screen"
-    android:layout_margin="15dp">
+    android:layout_margin="10dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/boxes"
-        android:padding="15dp"
-        >
+        android:background="@color/white"
+        android:padding="15dp">
 
         <TextView
             android:id="@+id/CenterName"
@@ -20,7 +22,7 @@
             android:drawablePadding="5dp"
             android:padding="5dp"
             android:text="Name"
-            android:textColor="@color/white" />
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/CenterLocation"
@@ -28,21 +30,21 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/CenterName"
             android:drawableLeft="@drawable/location"
-            android:textColor="@color/white"
             android:drawablePadding="5dp"
             android:padding="5dp"
-            android:text="Location" />
+            android:text="Location"
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/VaccineTiming"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
             android:layout_below="@id/CenterLocation"
             android:drawableLeft="@drawable/clock"
             android:drawablePadding="5dp"
             android:padding="5dp"
-            android:text="Time" />
+            android:text="Time"
+            android:textColor="@color/black" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -58,7 +60,7 @@
                 android:gravity="center"
                 android:text="Vaccine name"
                 android:drawablePadding="4dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:padding="3dp"
                 android:layout_weight="1"
                 android:drawableLeft="@drawable/vaccine"
@@ -71,7 +73,7 @@
                 android:layout_weight="1"
                 android:text="Fees"
                 android:gravity="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:padding="3dp"
 
                 />
@@ -84,7 +86,7 @@
                 android:drawablePadding="4dp"
                 android:padding="3dp"
                 android:layout_weight="1"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textAlignment="center"
                 android:gravity="center_horizontal" />
         </LinearLayout>
@@ -105,7 +107,7 @@
                 android:padding="2dp"
                 android:layout_weight="1"
                 android:textAlignment="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:gravity="center_horizontal" />
 
             <TextView
@@ -116,7 +118,7 @@
                 android:drawablePadding="4dp"
                 android:padding="2dp"
                 android:layout_weight="1"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textAlignment="center"
                 android:gravity="center_horizontal" />
 
@@ -127,7 +129,7 @@
                 android:text="Dose 2 : "
                 android:drawablePadding="4dp"
                 android:padding="2dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:layout_weight="1"
                 android:textAlignment="center"
                 android:gravity="center_horizontal" />

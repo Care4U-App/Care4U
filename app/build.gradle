@@ -51,4 +51,7 @@ dependencies {
     implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.3'
     implementation 'com.karumi:dexter:6.2.2'
     implementation 'com.budiyev.android:code-scanner:2.1.0'
+
+    //Progress bar
+    implementation 'com.github.lzyzsd:circleprogress:1.2.4'
 }
