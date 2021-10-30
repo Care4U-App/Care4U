@@ -34,6 +34,7 @@ public class GenQR extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_gen_qr);
 
+
         SharedPreferences st = getApplicationContext().getSharedPreferences("vacc_details", Context.MODE_PRIVATE);
         fin=st.getString("status", "");
         imageView = findViewById(R.id.iv_out);
