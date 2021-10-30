@@ -3,38 +3,31 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Aritra GS/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_gen_qr.xml" value="0.24010416666666667" />
-        <entry key="..\:/Users/Aritra GS/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_scan_qr.xml" value="0.15185185185185185" />
-        <entry key="..\:/Users/Aritra GS/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_self_assessment.xml" value="0.1824074074074074" />
-        <entry key="..\:/Users/Aritra GS/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_self_assessment_result.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/drawable/background.xml" value="0.21614583333333334" />
+        <entry key="..\:/AndroidStudioProjects/Care4U/app/src/main/res/drawable/background.xml" value="0.2265" />
+        <entry key="..\:/AndroidStudioProjects/Care4U/app/src/main/res/drawable/bg_round.xml" value="0.195" />
+        <entry key="..\:/AndroidStudioProjects/Care4U/app/src/main/res/drawable/button.xml" value="0.195" />
+        <entry key="..\:/AndroidStudioProjects/Care4U/app/src/main/res/drawable/buttonsignup.xml" value="0.204" />
+        <entry key="..\:/AndroidStudioProjects/Care4U/app/src/main/res/drawable/edit.xml" value="0.195" />
+        <entry key="..\:/AndroidStudioProjects/Care4U/app/src/main/res/drawable/email_image.xml" value="0.133" />
+        <entry key="..\:/AndroidStudioProjects/Care4U/app/src/main/res/drawable/pink_out_line.xml" value="0.1745" />
+        <entry key="..\:/AndroidStudioProjects/Care4U/app/src/main/res/drawable/toggle_widget_background.xml" value="0.158" />
+        <entry key="..\:/AndroidStudioProjects/Care4U/app/src/main/res/drawable/toggle_widget_button.xml" value="0.158" />
+        <entry key="..\:/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_forget_pass.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_live_covid_cases.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_login_page.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/Care4U/app/src/main/res/layout/fragment_login.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProjects/Care4U/app/src/main/res/layout/fragment_sign_up.xml" value="0.264" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/drawable/bg_grad.xml" value="0.21614583333333334" />
-        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/drawable/button.xml" value="0.21614583333333334" />
-        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/drawable/skip.xml" value="0.21614583333333334" />
-        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/drawable/stroke_but.xml" value="0.21614583333333334" />
-        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/drawable/stroke_button.xml" value="0.21614583333333334" />
-        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_countrywise_data.xml" value="0.33" />
-        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_gen_qr.xml" value="0.2" />
-        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_homescreen.xml" value="0.25" />
-        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_obs.xml" value="0.25" />
-        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_per_country_data.xml" value="0.33" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_result_safe.xml" value="0.2" />
-        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_safety_tips.xml" value="0.2" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_scan_qr.xml" value="0.2" />
-        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_self_assessment.xml" value="0.22" />
         <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_self_assessment_result.xml" value="0.2" />
-        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_user_details.xml" value="0.25" />
-        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_vaccine_details.xml" value="0.22" />
-        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_vaccine_slot.xml" value="0.25" />
-        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/activity_world_data.xml" value="0.2" />
-        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/center_list.xml" value="0.2" />
-        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/countrywise_list_layout.xml" value="0.25" />
-        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/progress_dialog.xml" value="0.2" />
-        <entry key="..\:/Users/binay/AndroidStudioProjects/Care4U/app/src/main/res/layout/slides_layout.xml" value="0.2" />
+        <entry key="..\:/Users/binay/StudioProjects/Care4U/app/src/main/res/layout/activity_login_page.xml" value="0.2" />
+        <entry key="..\:/Users/binay/StudioProjects/Care4U/app/src/main/res/layout/activity_self_assessment_result.xml" value="0.2" />
+        <entry key="..\:/Users/binay/StudioProjects/Care4U/app/src/main/res/layout/fragment_login.xml" value="0.2" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
