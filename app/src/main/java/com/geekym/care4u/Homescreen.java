@@ -43,9 +43,9 @@ public class Homescreen extends AppCompatActivity {
         QR = findViewById(R.id.QRCode);
 
         //Receiving Name from User Details Activity via SharedPreferences
-        SharedPreferences sp = getApplicationContext().getSharedPreferences("user_details", Context.MODE_PRIVATE);
-        String name=sp.getString("saved_name", "");
-        welcome.setText("Welcome "+name);
+       // SharedPreferences sp = getApplicationContext().getSharedPreferences("user_details", Context.MODE_PRIVATE);
+      //  String name=sp.getString("saved_name", "");
+      //  welcome.setText("Welcome "+name);
 
         //Safety Tips
         safety.setOnClickListener(new View.OnClickListener() {

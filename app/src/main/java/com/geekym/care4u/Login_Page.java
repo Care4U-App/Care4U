@@ -5,19 +5,36 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class Login_Page extends AppCompatActivity {
     RadioGroup toggle;
     RadioButton signup,login;
+    CheckBox remember;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_login_page);
+
+        remember = findViewById(R.id.remember);
+
+        SharedPreferences preferences = getSharedPreferences("checkbox",MODE_PRIVATE);
+        String checkbox = preferences.getString("remember","");
+        if (checkbox.equals("true")){
+            Intent intent = new Intent(Login_Page.this,  Homescreen.class);
+            startActivity(intent);
+        }else if (checkbox.equals("false")){
+            Toast.makeText(this, "Please Log In", Toast.LENGTH_SHORT).show();
+        }
 
         addfragment(new LoginFragment());
 
@@ -33,6 +50,27 @@ public class Login_Page extends AppCompatActivity {
                 }
                 else if (checkedId == R.id.loginbutton){
                     addfragment(new LoginFragment());
+                }
+            }
+        });
+
+        remember.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                if (buttonView.isChecked()){
+
+                    SharedPreferences preferences = getSharedPreferences("checkbox",MODE_PRIVATE);
+                    SharedPreferences.Editor editor = preferences.edit();
+                    editor.putString("remember","true");
+                    editor.apply();
+                }
+                else if (!buttonView.isChecked()){
+
+                    SharedPreferences preferences = getSharedPreferences("checkbox",MODE_PRIVATE);
+                    SharedPreferences.Editor editor = preferences.edit();
+                    editor.putString("remember","false");
+                    editor.apply();
                 }
             }
         });

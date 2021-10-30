@@ -10,22 +10,24 @@
     <RadioGroup
         android:id="@+id/toggle"
         android:layout_width="285dp"
-        android:layout_height="53dp"
+        android:layout_height="38dp"
         android:background="@drawable/pink_out_line"
         android:checkedButton="@+id/loginbutton"
+        android:gravity="center_horizontal|center_vertical"
         android:orientation="horizontal"
-
         app:layout_constraintBottom_toTopOf="@+id/frameLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo">
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.519">
 
         <RadioButton
             android:id="@+id/signupbutton"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="38dp"
             android:layout_marginLeft="1dp"
             android:layout_marginTop="1dp"
+            android:layout_marginRight="5dp"
             android:layout_marginBottom="1dp"
             android:layout_weight="1"
             android:background="@drawable/toggle_widget_background"
@@ -37,7 +39,8 @@
         <RadioButton
             android:id="@+id/loginbutton"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginTop="1dp"
             android:layout_marginRight="1dp"
             android:layout_marginBottom="1dp"
@@ -58,7 +61,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.037"
+        app:layout_constraintVertical_bias="0.298"
         app:srcCompat="@drawable/logo" />
 
     <FrameLayout
@@ -71,7 +74,20 @@
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.894"></FrameLayout>
+        app:layout_constraintVertical_bias="0.709"></FrameLayout>
+
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/white"
+        android:text="Remember Me"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintVertical_bias="0.21" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

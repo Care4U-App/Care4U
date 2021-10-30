@@ -75,6 +75,8 @@
         android:textSize="13dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/loginpass"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/loginpass"
         app:layout_constraintTop_toBottomOf="@+id/loginpass" />
 
     <ProgressBar
@@ -88,15 +90,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginemail" />
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Remember Me"
-        android:buttonTint="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/forgetpass"
-        app:layout_constraintHorizontal_bias="0.076"
-        app:layout_constraintStart_toStartOf="@+id/loginpass"
-        app:layout_constraintTop_toBottomOf="@+id/loginpass" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

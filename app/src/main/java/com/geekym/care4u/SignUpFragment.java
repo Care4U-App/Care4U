@@ -108,7 +108,7 @@ public class SignUpFragment extends Fragment {
                                             if (task.isSuccessful()){
                                                 Toast.makeText(getActivity(), "Registration Successful", Toast.LENGTH_SHORT).show();
                                                 progressBar.setVisibility(View.GONE);
-                                                Intent intent = new Intent(getActivity(),Homescreen.class);
+                                                Intent intent = new Intent(getActivity(),User_Details.class);
                                                 startActivity(intent);
                                                 Animatoo.animateFade(getContext());
                                                 getActivity().finishAffinity();
