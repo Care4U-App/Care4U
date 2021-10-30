@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1094259957672",
+    "firebase_url": "https://care4u-89344-default-rtdb.firebaseio.com",
+    "project_id": "care4u-89344",
+    "storage_bucket": "care4u-89344.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094259957672:android:5613371b21c001e2c4879d",
+        "android_client_info": {
+          "package_name": "com.geekym.care4u"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094259957672-0r29kba5k5817fie608unhbnf64n24cf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCppeu2hiF1op1F9VZwV2h6pOa8559KXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1094259957672-0r29kba5k5817fie608unhbnf64n24cf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
