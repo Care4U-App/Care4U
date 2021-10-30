@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.geekym.care4u">
+    package="com.geekym.care4u" >
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -8,7 +8,9 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature android:name="android.hardware.camera" />
+
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
@@ -17,14 +19,19 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Care4U">
+        android:theme="@style/Theme.Care4U" >
+        <activity
+            android:name=".VaccineSlot.Vaccine_Slot"
+            android:exported="false" />
         <activity
             android:name=".CovidCases.WorldDataActivity"
-            android:exported="true"/>
-        <activity android:name=".CovidCases.CountrywiseDataActivity"
-            android:exported="true"/>
-        <activity android:name=".CovidCases.data.PerCountryData"
-            android:exported="true"/>
+            android:exported="true" />
+        <activity
+            android:name=".CovidCases.CountrywiseDataActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CovidCases.data.PerCountryData"
+            android:exported="true" />
         <activity
             android:name=".Self_Assessment_Result"
             android:exported="false" />
@@ -36,7 +43,7 @@
             android:exported="false" />
         <activity
             android:name=".Login_Page"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -60,9 +67,6 @@
             android:name=".User_Details"
             android:exported="true" />
         <activity
-            android:name=".Vaccine_Slot"
-            android:exported="false" />
-        <activity
             android:name=".ScanQR"
             android:exported="false" />
         <activity
@@ -76,10 +80,10 @@
             android:exported="true" />
         <activity
             android:name=".Homescreen"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".Splashscreen"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

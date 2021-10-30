@@ -17,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.geekym.care4u.CovidCases.WorldDataActivity;
+import com.geekym.care4u.VaccineSlot.Vaccine_Slot;
 
 public class Homescreen extends AppCompatActivity {
 
