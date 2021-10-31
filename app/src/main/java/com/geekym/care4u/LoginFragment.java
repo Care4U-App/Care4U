@@ -27,6 +27,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 
 public class LoginFragment extends Fragment {
@@ -92,11 +93,20 @@ public class LoginFragment extends Fragment {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()){
-                                progressBar.setVisibility(View.GONE);
-                                Intent intent2 = new Intent(getActivity(),User_Details.class);
-                                startActivity(intent2);
-                                Animatoo.animateFade(getContext());
-                                getActivity().finishAffinity();
+
+                                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                                if (user.isEmailVerified()){
+                                    progressBar.setVisibility(View.GONE);
+                                    Intent intent2 = new Intent(getActivity(),Homescreen.class);
+                                    startActivity(intent2);
+                                    Animatoo.animateFade(getContext());
+                                    getActivity().finishAffinity();
+                                }
+                                else{
+                                    progressBar.setVisibility(View.GONE);
+                                    user.sendEmailVerification();
+                                    Toast.makeText(getActivity(), "Check your email to verify your account and Login again", Toast.LENGTH_SHORT).show();
+                                }
                             }
                             else {
                                 progressBar.setVisibility(View.GONE);

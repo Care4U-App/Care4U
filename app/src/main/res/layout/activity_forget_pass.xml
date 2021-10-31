@@ -4,6 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ForgetPass">
+    tools:context=".ForgetPass"
+    android:background="@drawable/background">
+
+    <EditText
+        android:id="@+id/resetemail"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="212dp"
+        android:background="@drawable/edit"
+        android:drawableLeft="@drawable/email_image"
+        android:drawablePadding="10dp"
+        android:elevation="20dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textColorHint="#B1C2CF"
+        app:layout_constraintEnd_toEndOf="@+id/logo"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <Button
+        android:id="@+id/btnresetpass"
+        android:layout_width="213dp"
+        android:layout_height="62dp"
+        android:background="@drawable/buttonsignup"
+        android:backgroundTint="@color/Dark_Blue"
+        android:text="Reset password"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/resetemail"
+        app:layout_constraintStart_toStartOf="@+id/resetemail"
+        app:layout_constraintTop_toBottomOf="@+id/resetemail"
+        app:layout_constraintVertical_bias="0.894" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="93dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
