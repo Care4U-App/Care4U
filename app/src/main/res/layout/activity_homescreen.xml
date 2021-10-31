@@ -34,13 +34,12 @@
 
     <TextView
         android:id="@+id/greeting_name"
-        android:layout_width="200dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/montserrat"
         android:gravity="center_horizontal"
-        android:text="Welcome"
         android:textColor="@color/white"
         android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
