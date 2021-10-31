@@ -29,11 +29,25 @@ public class Self_Assessment_Result extends AppCompatActivity {
         //UserDetails
         SharedPreferences sp = getApplicationContext().getSharedPreferences("user_details", Context.MODE_PRIVATE);
 
-        String name=sp.getString("saved_name", "");
-        String height=sp.getString("saved_height", "");
-        String weight=sp.getString("saved_weight", "");
-        String bpm=sp.getString("saved_bpm", "");
-        String age=sp.getString("saved_age", "");
+        String name=sp.getString("saved_name", "");         //Retrieved from Firebase
+        String height=sp.getString("saved_height", "");     //Maybe Null
+        String weight=sp.getString("saved_weight", "");     //Maybe Null
+        String bpm=sp.getString("saved_bpm", "");           //Maybe Null
+            String age=sp.getString("saved_age", "");       //Not Null
+
+        if(bpm.equals("NULL")){
+            bpm = "5";
+            Integer bpm_int = new Integer(bpm);
+        }
+        if(weight.equals("NULL")){
+            weight = "5";
+            Integer wt = new Integer(weight);
+        }
+        if(height.equals("NULL")){
+            height = "5";
+            Integer ht = new Integer(height);
+        }
+
 
 
         Integer prog = getIntent().getExtras().getInt("newval",0);

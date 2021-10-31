@@ -34,7 +34,7 @@ public class Homescreen extends AppCompatActivity implements PopupMenu.OnMenuIte
         getSupportActionBar().hide();
         setContentView(R.layout.activity_homescreen);
 
-        //
+        //Here we initialize variables with ids
         vslot =  findViewById(R.id.vaccine_slot);
         lout =  findViewById(R.id.logout);
         tracker = findViewById(R.id.covidtracker);
@@ -46,8 +46,8 @@ public class Homescreen extends AppCompatActivity implements PopupMenu.OnMenuIte
 
         //Receiving Name from User Details Activity via SharedPreferences
        // SharedPreferences sp = getApplicationContext().getSharedPreferences("user_details", Context.MODE_PRIVATE);
-      //  String name=sp.getString("saved_name", "");
-      //  welcome.setText("Welcome "+name);
+        //String name=sp.getString("saved_name", "");
+        //welcome.setText("Welcome "+name);
 
         //Safety Tips
         safety.setOnClickListener(new View.OnClickListener() {
@@ -174,9 +174,9 @@ public class Homescreen extends AppCompatActivity implements PopupMenu.OnMenuIte
     public boolean onMenuItemClick(MenuItem menuItem) {
         switch (menuItem.getItemId()) {
             case R.id.Update_user:
-                SharedPreferences preferences = getSharedPreferences("checkbox", MODE_PRIVATE);
+                SharedPreferences preferences = getSharedPreferences("ud", MODE_PRIVATE);
                 SharedPreferences.Editor editor = preferences.edit();
-                editor.putString("remember", "false");
+                editor.putString("update_ud", "true");
                 editor.apply();
                 Intent b = new Intent(Homescreen.this, User_Details.class);
                 startActivity(b);
@@ -184,27 +184,17 @@ public class Homescreen extends AppCompatActivity implements PopupMenu.OnMenuIte
                 break;
 
             case R.id.Update_vaccine:
-                SharedPreferences preferences1 = getSharedPreferences("save", MODE_PRIVATE);
-                SharedPreferences.Editor editor1 = preferences1.edit();
-                editor1.putString("save1", "false");
-                editor1.apply();
                 Intent c = new Intent(Homescreen.this, Vaccine_Details.class);
                 startActivity(c);
                 finishAffinity();
                 break;
 
             case R.id.Reset:
-                SharedPreferences preferences2 = getSharedPreferences("checkbox", MODE_PRIVATE);
-                SharedPreferences preferences3 = getSharedPreferences("save", MODE_PRIVATE);
+                SharedPreferences preferences2 = getSharedPreferences("update_all", MODE_PRIVATE);
                 SharedPreferences.Editor editor2 = preferences2.edit();
-                SharedPreferences.Editor editor3 = preferences3.edit();
-                editor2.putString("remember", "false");
-                editor3.putString("save1", "false");
-                preferences2.edit().remove("checkbox").commit();
-                preferences3.edit().remove("save").commit();
+                editor2.putString("all", "true");
                 editor2.apply();
-                editor3.apply();
-                Intent d = new Intent(Homescreen.this, Login_Page.class);
+                Intent d = new Intent(Homescreen.this, User_Details.class);
                 startActivity(d);
                 finishAffinity();
                 break;

@@ -8,6 +8,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -16,7 +17,7 @@ public class User_Details extends AppCompatActivity {
     //Here we declare variables
     EditText age, weight, height, bpm;
     Button confirm;
-    SharedPreferences sp;
+    SharedPreferences sp, up, ud;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,12 +33,18 @@ public class User_Details extends AppCompatActivity {
         bpm = findViewById(R.id.bpm_input);
         sp = getSharedPreferences("user_details", Context.MODE_PRIVATE);
 
+        ud = getApplicationContext().getSharedPreferences("ud", Context.MODE_PRIVATE);
+        String Check=ud.getString("update_ud", "");
+        up = getApplicationContext().getSharedPreferences("update_all", Context.MODE_PRIVATE);
+        String Reset=up.getString("all", "");
+
+
         //When the user clicks on Confirm, It takes them to the Vaccine_Detials Activity
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (age.length() == 0 || weight.length() == 0 || height.length() == 0 || bpm.length() == 0){
-                    Toast.makeText(User_Details.this, "Enter the empty fields!", Toast.LENGTH_SHORT).show();
+                if (age.length() == 0){     //Age is important for calculation of Self Assessment Result
+                    Toast.makeText(User_Details.this, "Entering Age is Compulsory!", Toast.LENGTH_SHORT).show();
                 }
                 else{
                     //Here we extract texts entered by the user in the form of Strings
@@ -45,18 +52,47 @@ public class User_Details extends AppCompatActivity {
                     String txt_height = height.getText().toString();
                     String txt_weight = weight.getText().toString();
                     String txt_bpm = bpm.getText().toString();
-
+                    if(txt_bpm.equals("")){
+                        txt_bpm = "NULL";
+                    }
+                    if(txt_weight.equals("")){
+                        txt_weight = "NULL";
+                    }
+                    if(txt_height.equals("")){
+                        txt_height = "NULL";
+                    }
                     //Here we start saving User's details which we will use in future
-                    SharedPreferences.Editor editor = sp.edit();
+                    SharedPreferences.Editor editor = sp.edit(); //Details
                     editor.putString("saved_age", txt_age);
                     editor.putString("saved_height", txt_height);
                     editor.putString("saved_weight", txt_weight);
                     editor.putString("saved_bpm", txt_bpm);
-                    editor.commit();                                                          //Details saving ends
-                    Toast.makeText(User_Details.this, "Saved Successfully!", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(User_Details.this,Vaccine_Details.class);
-                    startActivity(intent);
-                    finish();
+                    editor.commit();
+
+                    if (Check.equals("true") && Reset.equals("false")) {     //Called from Homescreen (Update)
+                        SharedPreferences preferences = getSharedPreferences("ud",MODE_PRIVATE);
+                        SharedPreferences.Editor editor1 = preferences.edit();
+                        editor1.putString("update_ud","false");
+                        editor1.apply();
+                        Toast.makeText(User_Details.this, "Saved Successfully!", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(User_Details.this,Homescreen.class);
+                        startActivity(intent);
+                        finish();
+                    }else if (Check.equals("false") && Reset.equals("true")) {   //Called normally
+                        SharedPreferences preferences = getSharedPreferences("update",MODE_PRIVATE);
+                        SharedPreferences.Editor editor1 = preferences.edit();
+                        editor1.putString("all","false");
+                        editor1.apply();
+                        Toast.makeText(User_Details.this, "Saved Successfully!", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(User_Details.this,Vaccine_Details.class);
+                        startActivity(intent);
+                        finish();
+                    }else{
+                        Toast.makeText(User_Details.this, "Saved Successfully!", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(User_Details.this,Vaccine_Details.class);
+                        startActivity(intent);
+                        finish();
+                    }
                 }
             }
         });

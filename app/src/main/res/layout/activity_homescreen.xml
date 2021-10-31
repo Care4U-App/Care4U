@@ -290,19 +290,21 @@
 
         <ImageButton
             android:id="@+id/menu"
-            android:layout_width="27dp"
-            android:layout_height="28dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="19dp"
+            android:layout_marginStart="218dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="32dp"
-            android:layout_marginBottom="27dp"
+            android:layout_marginBottom="11dp"
+            android:layout_toEndOf="@+id/logout"
             android:background="@drawable/menu"
             android:onClick="showPopup"
-            app:layout_constraintDimensionRatio="1:1"
+
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/logout"
@@ -311,12 +313,10 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="24dp"
             android:layout_marginLeft="24dp"
             android:layout_marginTop="7dp"
-            android:layout_marginEnd="279dp"
             android:layout_marginBottom="4dp"
             android:background="@drawable/stroke_button"
             android:elevation="5dp"
