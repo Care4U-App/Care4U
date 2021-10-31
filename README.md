@@ -71,7 +71,7 @@ the user experience in mind.
 
 
 
-## 🔥 Authors
+## 🔥 Developers -
 
 - [Aritra Das](https://github.com/aritra-tech)
 - [Binay Shaw](https://github.com/binayshaw7777)
