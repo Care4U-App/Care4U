@@ -20,6 +20,8 @@ import android.widget.Toast;
 
 import com.geekym.care4u.CovidCases.WorldDataActivity;
 import com.geekym.care4u.VaccineSlot.Vaccine_Slot;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Homescreen extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
 
@@ -97,6 +99,7 @@ public class Homescreen extends AppCompatActivity implements PopupMenu.OnMenuIte
                 alertDialogBuilder.setPositiveButton("Logout", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
+                        FirebaseAuth.getInstance().signOut();
                         Intent intent = new Intent(Homescreen.this, Login_Page.class);
                         startActivity(intent);
                         SharedPreferences preferences = getSharedPreferences("checkbox",MODE_PRIVATE);
@@ -174,9 +177,9 @@ public class Homescreen extends AppCompatActivity implements PopupMenu.OnMenuIte
     public boolean onMenuItemClick(MenuItem menuItem) {
         switch (menuItem.getItemId()) {
             case R.id.Update_user:
-                SharedPreferences preferences = getSharedPreferences("checkbox", MODE_PRIVATE);
+                SharedPreferences preferences = getSharedPreferences("ud", MODE_PRIVATE);
                 SharedPreferences.Editor editor = preferences.edit();
-                editor.putString("remember", "false");
+                editor.putString("update_ud", "true");
                 editor.apply();
                 Intent b = new Intent(Homescreen.this, User_Details.class);
                 startActivity(b);
@@ -184,27 +187,18 @@ public class Homescreen extends AppCompatActivity implements PopupMenu.OnMenuIte
                 break;
 
             case R.id.Update_vaccine:
-                SharedPreferences preferences1 = getSharedPreferences("save", MODE_PRIVATE);
-                SharedPreferences.Editor editor1 = preferences1.edit();
-                editor1.putString("save1", "false");
-                editor1.apply();
                 Intent c = new Intent(Homescreen.this, Vaccine_Details.class);
                 startActivity(c);
                 finishAffinity();
                 break;
 
             case R.id.Reset:
-                SharedPreferences preferences2 = getSharedPreferences("checkbox", MODE_PRIVATE);
-                SharedPreferences preferences3 = getSharedPreferences("save", MODE_PRIVATE);
+                SharedPreferences preferences2 = getSharedPreferences("update_all", MODE_PRIVATE);
                 SharedPreferences.Editor editor2 = preferences2.edit();
-                SharedPreferences.Editor editor3 = preferences3.edit();
-                editor2.putString("remember", "false");
-                editor3.putString("save1", "false");
+                editor2.putString("all", "true");
                 preferences2.edit().remove("checkbox").commit();
-                preferences3.edit().remove("save").commit();
                 editor2.apply();
-                editor3.apply();
-                Intent d = new Intent(Homescreen.this, Login_Page.class);
+                Intent d = new Intent(Homescreen.this, User_Details.class);
                 startActivity(d);
                 finishAffinity();
                 break;

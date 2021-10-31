@@ -59,4 +59,7 @@ dependencies {
 
     // Animate Slide Left Right
     implementation 'com.github.mohammadatif:Animatoo:master'
+
+    //Circular Progressbar
+    implementation 'com.github.lzyzsd:circleprogress:1.2.1'
 }
