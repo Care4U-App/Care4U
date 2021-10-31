@@ -119,7 +119,7 @@ public class LoginFragment extends Fragment {
                                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                                 if (user.isEmailVerified()){
                                     progressBar.setVisibility(View.GONE);
-                                    Intent intent2 = new Intent(getActivity(),Homescreen.class);
+                                    Intent intent2 = new Intent(getActivity(),User_Details.class);
                                     startActivity(intent2);
                                     Animatoo.animateFade(getContext());
                                     getActivity().finishAffinity();

@@ -224,11 +224,6 @@ public class Homescreen extends AppCompatActivity implements PopupMenu.OnMenuIte
                 break;
 
             case R.id.Reset:
-                SharedPreferences preferences2 = getSharedPreferences("update_all", MODE_PRIVATE);
-                SharedPreferences.Editor editor2 = preferences2.edit();
-                editor2.putString("all", "true");
-                preferences2.edit().remove("checkbox").commit();
-                editor2.apply();
                 Intent d = new Intent(Homescreen.this, User_Details.class);
                 startActivity(d);
                 finishAffinity();

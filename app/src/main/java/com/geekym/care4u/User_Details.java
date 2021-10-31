@@ -35,8 +35,6 @@ public class User_Details extends AppCompatActivity {
 
         ud = getApplicationContext().getSharedPreferences("ud", Context.MODE_PRIVATE);
         String Check=ud.getString("update_ud", "");
-        up = getApplicationContext().getSharedPreferences("update_all", Context.MODE_PRIVATE);
-        String Reset=up.getString("all", "");
 
 
         //When the user clicks on Confirm, It takes them to the Vaccine_Detials Activity
@@ -69,7 +67,7 @@ public class User_Details extends AppCompatActivity {
                     editor.putString("saved_bpm", txt_bpm);
                     editor.commit();
 
-                    if (Check.equals("true") && Reset.equals("false")) {     //Called from Homescreen (Update)
+                    if (Check.equals("true")) {     //Called from Homescreen (Update)
                         SharedPreferences preferences = getSharedPreferences("ud",MODE_PRIVATE);
                         SharedPreferences.Editor editor1 = preferences.edit();
                         editor1.putString("update_ud","false");
@@ -78,16 +76,7 @@ public class User_Details extends AppCompatActivity {
                         Intent intent = new Intent(User_Details.this,Homescreen.class);
                         startActivity(intent);
                         finish();
-                    }else if (Check.equals("false") && Reset.equals("true")) {   //Called normally
-                        SharedPreferences preferences = getSharedPreferences("update",MODE_PRIVATE);
-                        SharedPreferences.Editor editor1 = preferences.edit();
-                        editor1.putString("all","false");
-                        editor1.apply();
-                        Toast.makeText(User_Details.this, "Saved Successfully!", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(User_Details.this,Vaccine_Details.class);
-                        startActivity(intent);
-                        finish();
-                    }else{
+                        }else{
                         Toast.makeText(User_Details.this, "Saved Successfully!", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(User_Details.this,Vaccine_Details.class);
                         startActivity(intent);
