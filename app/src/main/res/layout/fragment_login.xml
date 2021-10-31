@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:background="@drawable/edit"
+        android:background="@drawable/stroke_button"
         android:drawableLeft="@drawable/email_image"
         android:drawablePadding="10dp"
         android:elevation="20dp"
@@ -29,13 +29,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="143dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="87dp"
+        android:buttonTint="@color/white"
+        android:text="Remember Me"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/forgetpass"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/loginpass"
+        app:layout_constraintTop_toBottomOf="@+id/loginpass" />
+
     <EditText
         android:id="@+id/loginpass"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="64dp"
-        android:background="@drawable/edit"
+        android:background="@drawable/stroke_button"
         android:drawableLeft="@drawable/pass_image"
         android:drawablePadding="10dp"
         android:elevation="20dp"
@@ -56,8 +70,7 @@
         android:layout_height="62dp"
         android:layout_marginEnd="68dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/buttonsignup"
-        android:backgroundTint="@color/Dark_Blue"
+        android:background="@drawable/button"
         android:text="Login"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -71,14 +84,12 @@
         android:id="@+id/forgetpass"
         android:layout_width="139dp"
         android:layout_height="38dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="Forgot Password?"
         android:textSize="13dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/loginpass"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/loginpass"
         app:layout_constraintTop_toBottomOf="@+id/loginpass" />
 
     <ProgressBar

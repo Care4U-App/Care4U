@@ -39,6 +39,7 @@ public class LoginFragment extends Fragment {
     EditText email,pass;
     Button login;
     TextView frgtpass;
+    CheckBox checkBox;
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -50,7 +51,28 @@ public class LoginFragment extends Fragment {
         login = getView().findViewById(R.id.btnlogin);
         frgtpass = getView().findViewById(R.id.forgetpass);
         progressBar = getView().findViewById(R.id.progressBar2);
+        checkBox = getView().findViewById(R.id.checkBox);
 
+
+        //Remember me checkbox
+        checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+
+                if (compoundButton.isChecked()){
+                    SharedPreferences preferences = getActivity().getSharedPreferences("checkbox",MODE_PRIVATE);
+                    SharedPreferences.Editor editor = preferences.edit();
+                    editor.putString("remember","true");
+                    editor.apply();
+                }
+                else if (!compoundButton.isChecked()){
+                    SharedPreferences preferences = getActivity().getSharedPreferences("checkbox",MODE_PRIVATE);
+                    SharedPreferences.Editor editor = preferences.edit();
+                    editor.putString("remember","false");
+                    editor.apply();
+                }
+            }
+        });
 
         frgtpass.setOnClickListener(new View.OnClickListener() {
             @Override

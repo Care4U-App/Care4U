@@ -17,15 +17,12 @@ import android.widget.Toast;
 public class Login_Page extends AppCompatActivity {
     RadioGroup toggle;
     RadioButton signup,login;
-    CheckBox remember;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_login_page);
-
-        remember = findViewById(R.id.remember);
 
         SharedPreferences preferences = getSharedPreferences("checkbox",MODE_PRIVATE);
         String checkbox = preferences.getString("remember","");
@@ -54,7 +51,7 @@ public class Login_Page extends AppCompatActivity {
             }
         });
 
-        remember.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+      /*  remember.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
@@ -73,7 +70,7 @@ public class Login_Page extends AppCompatActivity {
                     editor.apply();
                 }
             }
-        });
+        });*/
     }
     private void replacefragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();

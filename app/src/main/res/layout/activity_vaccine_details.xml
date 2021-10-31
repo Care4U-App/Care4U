@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/montserrat"
-        android:text="CaringYou"
+        android:text="Care4U"
         android:textColor="@color/white"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"

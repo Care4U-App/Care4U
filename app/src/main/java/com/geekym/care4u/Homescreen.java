@@ -1,5 +1,6 @@
 package com.geekym.care4u;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -22,6 +23,11 @@ import com.geekym.care4u.CovidCases.WorldDataActivity;
 import com.geekym.care4u.VaccineSlot.Vaccine_Slot;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class Homescreen extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
 
@@ -29,6 +35,9 @@ public class Homescreen extends AppCompatActivity implements PopupMenu.OnMenuIte
     Button lout, QR, Help;
     CardView selftest, tracker, vslot, safety;
     TextView welcome;
+    private FirebaseUser user;
+    private DatabaseReference reference;
+    private String userID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +55,28 @@ public class Homescreen extends AppCompatActivity implements PopupMenu.OnMenuIte
         Help = findViewById(R.id.helper);
         QR = findViewById(R.id.QRCode);
 
+        //Firebase get username
+        user = FirebaseAuth.getInstance().getCurrentUser();
+        reference = FirebaseDatabase.getInstance().getReference("Users");
+        userID = user.getUid();
+
+        reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                Users userprofile = snapshot.getValue(Users.class);
+
+                if (userprofile != null){
+                    String fullname = userprofile.name;
+
+                    welcome.setText("Welcome" + " " + fullname);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                welcome.setText("Welcome");
+            }
+        });
         //Receiving Name from User Details Activity via SharedPreferences
        // SharedPreferences sp = getApplicationContext().getSharedPreferences("user_details", Context.MODE_PRIVATE);
       //  String name=sp.getString("saved_name", "");
