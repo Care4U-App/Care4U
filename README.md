@@ -67,7 +67,7 @@ the user experience in mind.
 
 **Back-End:** Java
 
-**Database:** Firebase
+**Database and Authentication:** Firebase
 
 
 
