@@ -49,16 +49,6 @@ the user experience in mind.
 
 
 
-
-## 👍 How to Contribute?
-
-- Fork this repository.
-- Then Clone this repository on Android Studio.
-- Push changes to forked repository.
-- Make sure everything works fine.
-- Create a pull request.
-
-
 ## 👨🏽‍💻  Tech Stack
 
 **Front-End Design:** Adobe XD , Figma
