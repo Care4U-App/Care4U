@@ -41,6 +41,11 @@ the user experience in mind.
 - A list of important Safety tips
 
 
+## 🔥 Screenshorts
+![s1](https://user-images.githubusercontent.com/80090908/139576512-e5865017-a58a-4f3b-a9b3-80d4e04956c6.png)
+![s2](https://user-images.githubusercontent.com/80090908/139576515-74219c19-3103-481f-84d0-cfd9fb9e012f.png)
+
+
 ## 🖥️ API Used
 
  - World COVID Cases - https://disease.sh/v3/covid-19/all
@@ -49,17 +54,7 @@ the user experience in mind.
 
 
 
-
-## 👍 How to Contribute?
-
-- Fork this repository.
-- Then Clone this repository on Android Studio.
-- Push changes to forked repository.
-- Make sure everything works fine.
-- Create a pull request.
-
-
-## 👨🏽‍💻  Tech Stack
+## 👨🏽‍💻  Tech Used
 
 **Front-End Design:** Adobe XD , Figma
 
@@ -67,11 +62,11 @@ the user experience in mind.
 
 **Back-End:** Java
 
-**Database:** Firebase
+**Database and Authentication:** Firebase
 
 
 
-## 🔥 Authors
+## 🔥 Developers -
 
 - [Aritra Das](https://github.com/aritra-tech)
 - [Binay Shaw](https://github.com/binayshaw7777)
