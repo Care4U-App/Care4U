@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cereals"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/backfood"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="start"
+                android:layout_marginStart="19dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/back">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/backhome"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="start"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/button_home">
+
+            </ImageButton>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Care4U"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Here are some Cereals for you"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="345dp"
+            android:layout_height="120dp"
+            android:layout_row="1"
+            android:layout_marginTop="30dp"
+            android:layout_column="0"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            app:cardCornerRadius="10dp"
+            android:elevation="10dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/corn">
+
+                </ImageView>
+
+                <RelativeLayout
+                    android:layout_width="239dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/montserrat"
+                        android:paddingLeft="2dp"
+                        android:text="Corn"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold">
+
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="223dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text="Corn is rich in vitamin C, an antioxidant that helps protect your cells from damage and wards off diseases like cancer and heart disease"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/black"
+                        android:textSize="11dp">
+
+                    </TextView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="345dp"
+            android:layout_height="120dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/oats">
+
+                </ImageView>
+
+                <RelativeLayout
+                    android:layout_width="239dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/montserrat"
+                        android:paddingLeft="2dp"
+                        android:text="Oats"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold">
+
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="223dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text="A dietary intake rich in plant-based foods with high quality and quantity of nutrients and non-nutrients  may have a positive effect on the immune system."
+                        android:textAlignment="gravity"
+                        android:textColor="@color/black"
+                        android:textSize="11dp">
+
+                    </TextView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="345dp"
+            android:layout_height="120dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/bread">
+
+                </ImageView>
+
+                <RelativeLayout
+                    android:layout_width="239dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/montserrat"
+                        android:paddingLeft="2dp"
+                        android:text="Bread"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="223dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text="White bread is a prime culprit for suppressing the immune system"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/black"
+                        android:textSize="11dp">
+
+                    </TextView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="345dp"
+            android:layout_height="120dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/wheat">
+
+                </ImageView>
+
+                <RelativeLayout
+                    android:layout_width="239dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/montserrat"
+                        android:paddingLeft="2dp"
+                        android:text="Wheat"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold">
+
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="223dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text="Wheat germ is a key source of fiber — a dietary essential that keeps your digestive system on track, which also help boost immunity."
+                        android:textAlignment="gravity"
+                        android:textColor="@color/black"
+                        android:textSize="11dp">
+                    </TextView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="345dp"
+            android:layout_height="120dp"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/rice">
+
+                </ImageView>
+
+                <RelativeLayout
+                    android:layout_width="239dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/montserrat"
+                        android:paddingLeft="2dp"
+                        android:text="Rice"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold">
+
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/nothing"
+                        android:layout_width="223dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="6dp"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text="Rice is well equipped with an effective immune system that enables it to detect and fend off disease-causing microbes."
+                        android:textAlignment="gravity"
+                        android:textColor="@color/black"
+                        android:textSize="11dp">
+
+                    </TextView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="345dp"
+            android:layout_height="120dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/couscous">
+
+                </ImageView>
+
+                <RelativeLayout
+                    android:layout_width="239dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Couscous"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:paddingLeft="2dp">
+
+
+                    </TextView>
+
+                    <TextView
+
+                        android:layout_width="223dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="6dp"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text="These cereals consist of B3, B5, Vitamins B, Vegetable Proteins, High-fiber, and low absorption carbohydrates."
+                        android:textAlignment="gravity"
+                        android:textColor="@color/black"
+                        android:textSize="11dp">
+                    </TextView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="345dp"
+            android:layout_height="120dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/beans">
+
+                </ImageView>
+
+                <RelativeLayout
+                    android:layout_width="239dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="2dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Beans"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:paddingLeft="2dp">
+
+
+                    </TextView>
+
+                    <TextView
+
+                        android:layout_width="223dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text="Healthful gut bacteria also support immune system function and may promote weight loss. Beans feed the healthful gut bacteria colonies."
+                        android:textAlignment="gravity"
+                        android:textColor="@color/black"
+                        android:textSize="11dp">
+
+                    </TextView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="345dp"
+            android:layout_height="120dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/nuts">
+
+                </ImageView>
+
+                <RelativeLayout
+                    android:layout_width="239dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Nuts"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14dp">
+
+
+                    </TextView>
+
+                    <TextView
+
+                        android:layout_width="223dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text="The vitamin E found in nuts is needed by the immune system to fight off invading bacteria, so nuts are great for helping to prevent colds."
+                        android:textAlignment="gravity"
+                        android:textColor="@color/black"
+                        android:textSize="11dp">
+
+                    </TextView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</ScrollView>

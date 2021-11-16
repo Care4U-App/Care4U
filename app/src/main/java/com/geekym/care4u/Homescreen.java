@@ -32,7 +32,7 @@ import com.google.firebase.database.ValueEventListener;
 public class Homescreen extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
 
     //Declaring Variables
-    Button lout, QR, Help;
+    Button lout, QR, Food;
     CardView selftest, tracker, vslot, safety;
     TextView welcome;
     private FirebaseUser user;
@@ -52,7 +52,7 @@ public class Homescreen extends AppCompatActivity implements PopupMenu.OnMenuIte
         safety = findViewById(R.id.Safety);
         selftest = findViewById(R.id.selftest);
         welcome = findViewById(R.id.greeting_name);
-        Help = findViewById(R.id.helper);
+        Food = findViewById(R.id.food);
         QR = findViewById(R.id.QRCode);
 
         //Firebase get username
@@ -154,13 +154,11 @@ public class Homescreen extends AppCompatActivity implements PopupMenu.OnMenuIte
         });
 
         //Covid India Helpline
-        Help.setOnClickListener(new View.OnClickListener() {
+        Food.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent callIntent = new Intent(Intent.ACTION_DIAL);
-                callIntent.setData(Uri.parse("tel:"+Uri.encode("+911123978046")));
-                callIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(callIntent);
+                Intent g = new Intent(Homescreen.this, Food_For_You.class);
+                startActivity(g);
             }
         });
 
@@ -227,6 +225,13 @@ public class Homescreen extends AppCompatActivity implements PopupMenu.OnMenuIte
                 Intent d = new Intent(Homescreen.this, User_Details.class);
                 startActivity(d);
                 finishAffinity();
+                break;
+
+            case R.id.help:
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel:"+Uri.encode("+911123978046")));
+                callIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(callIntent);
                 break;
 
             default:

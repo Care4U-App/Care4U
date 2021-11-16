@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.geekym.care4u" >
+    package="com.geekym.care4u">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -19,7 +19,22 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Care4U" >
+        android:theme="@style/Theme.Care4U">
+        <activity
+            android:name=".Fruits"
+            android:exported="false" />
+        <activity
+            android:name=".Vegetables"
+            android:exported="false" />
+        <activity
+            android:name=".Protiens"
+            android:exported="false" />
+        <activity
+            android:name=".Cereals"
+            android:exported="false" />
+        <activity
+            android:name=".Food_For_You"
+            android:exported="false" />
         <activity
             android:name=".VaccineSlot.Vaccine_Slot"
             android:exported="false" />
@@ -46,13 +61,14 @@
             android:exported="false" />
         <activity
             android:name=".Login_Page"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.geekym.caringyou"
@@ -62,10 +78,11 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/provider_paths" />
         </provider>
+
         <activity
             android:name=".Vaccine_Details"
-            android:largeHeap="true"
-            android:exported="true" />
+            android:exported="true"
+            android:largeHeap="true" />
         <activity
             android:name=".User_Details"
             android:exported="true" />
@@ -86,7 +103,7 @@
             android:exported="true" />
         <activity
             android:name=".Splashscreen"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

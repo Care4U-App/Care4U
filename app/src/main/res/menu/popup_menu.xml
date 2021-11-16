@@ -6,4 +6,6 @@
         android:title="Update Vaccine Details"/>
     <item android:id="@+id/Reset"
         android:title="Reset All Data"/>
+    <item android:id="@+id/help"
+        android:title="Need Help?"/>
 </menu>

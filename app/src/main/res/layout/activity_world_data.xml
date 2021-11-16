@@ -29,7 +29,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:cardBackgroundColor="@color/bg_light"
+                app:cardBackgroundColor="#e0e5ec"
                 app:cardCornerRadius="8dp">
 
                 <LinearLayout
@@ -61,13 +61,13 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="13dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:gravity="center_vertical">
 
                             <View
                                 android:layout_width="13dp"
-                                android:layout_height="match_parent"
+                                android:layout_height="13dp"
                                 android:background="@color/blue_pie" />
 
                             <TextView
@@ -75,41 +75,41 @@
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="10dp"
                                 android:text="Active"
-                                android:textSize="10sp"
-                                android:textColor="#fff" />
+                                android:textSize="14dp"
+                                android:textColor="#313A49" />
 
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="13dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:gravity="center_vertical">
 
                             <View
                                 android:layout_width="13dp"
-                                android:layout_height="match_parent"
+                                android:layout_height="13dp"
                                 android:background="@color/green_pie" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="10dp"
-                                android:textSize="10sp"
+                                android:textSize="14dp"
                                 android:text="Recovered"
-                                android:textColor="#fff" />
+                                android:textColor="#313A49" />
 
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="13dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:gravity="center_vertical">
 
                             <View
                                 android:layout_width="13dp"
-                                android:layout_height="match_parent"
+                                android:layout_height="13dp"
                                 android:background="@color/red" />
 
                             <TextView
@@ -117,8 +117,8 @@
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="10dp"
                                 android:text="Deceased"
-                                android:textSize="10sp"
-                                android:textColor="#fff" />
+                                android:textSize="14dp"
+                                android:textColor="#313A49" />
 
                         </LinearLayout>
                     </LinearLayout>
@@ -149,7 +149,7 @@
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
                     android:layout_marginEnd="8dp"
-                    app:cardBackgroundColor="@color/bg_light"
+                    app:cardBackgroundColor="#e0e5ec"
                     app:cardCornerRadius="8dp"
                     android:layout_marginRight="8dp">
 
@@ -164,8 +164,9 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:text="Confirmed"
-                            android:textColor="@color/yellow"
-                            android:textSize="15sp" />
+                            android:textColor="#FF8C00"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
 
                         <TextView
                             android:id="@+id/world_confirmed_textview"
@@ -173,7 +174,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:gravity="center"
-                            android:textColor="#fff"
+                            android:textColor="#313A49"
                             android:textSize="20sp" />
 
                         <TextView
@@ -182,8 +183,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:gravity="center"
-                            android:textColor="@color/yellow"
-                            android:textSize="10sp" />
+                            android:textColor="#313A49"
+                            android:textSize="10sp"
+                            android:textStyle="bold"/>
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -193,7 +195,7 @@
                     android:layout_height="0dp"
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
-                    app:cardBackgroundColor="@color/bg_light"
+                    app:cardBackgroundColor="#e0e5ec"
                     app:cardCornerRadius="8dp">
 
                     <LinearLayout
@@ -207,8 +209,9 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:text="Active"
-                            android:textColor="@color/blue"
-                            android:textSize="15sp" />
+                            android:textColor="#0099FF"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
 
                         <TextView
                             android:id="@+id/world_active_textView"
@@ -216,7 +219,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:gravity="center"
-                            android:textColor="#fff"
+                            android:textColor="#313A49"
                             android:textSize="20sp" />
 
                         <TextView
@@ -225,8 +228,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:gravity="center"
-                            android:textColor="@color/blue"
-                            android:textSize="10sp" />
+                            android:textColor="#313A49"
+                            android:textSize="10sp"
+                            android:textStyle="bold"/>
 
                     </LinearLayout>
 
@@ -239,7 +243,7 @@
                     android:layout_columnWeight="1"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="8dp"
-                    app:cardBackgroundColor="@color/bg_light"
+                    app:cardBackgroundColor="#e0e5ec"
                     app:cardCornerRadius="8dp">
 
                     <LinearLayout
@@ -253,8 +257,9 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:text="Recovered"
-                            android:textColor="@color/green"
-                            android:textSize="15sp" />
+                            android:textColor="#4EAC02"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
 
                         <TextView
                             android:id="@+id/world_recovered_textView"
@@ -262,7 +267,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:gravity="center"
-                            android:textColor="#fff"
+                            android:textColor="#313A49"
                             android:textSize="20sp" />
 
                         <TextView
@@ -271,8 +276,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:gravity="center"
-                            android:textColor="@color/green"
-                            android:textSize="10sp" />
+                            android:textColor="#313A49"
+                            android:textSize="10sp"
+                            android:textStyle="bold"/>
 
                     </LinearLayout>
 
@@ -284,7 +290,7 @@
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
                     android:layout_marginTop="8dp"
-                    app:cardBackgroundColor="@color/bg_light"
+                    app:cardBackgroundColor="#e0e5ec"
                     app:cardCornerRadius="8dp">
 
                     <LinearLayout
@@ -299,7 +305,8 @@
                             android:gravity="center"
                             android:text="Deceased"
                             android:textColor="@color/red"
-                            android:textSize="15sp" />
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
 
                         <TextView
                             android:id="@+id/world_death_textView"
@@ -307,7 +314,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:gravity="center"
-                            android:textColor="#fff"
+                            android:textColor="#313A49"
                             android:textSize="20sp" />
 
                         <TextView
@@ -316,8 +323,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:gravity="center"
-                            android:textColor="@color/red"
-                            android:textSize="10sp" />
+                            android:textColor="#313A49"
+                            android:textSize="10sp"
+                            android:textStyle="bold"/>
 
                     </LinearLayout>
 
@@ -337,7 +345,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="8dp"
-                app:cardBackgroundColor="@color/bg_light"
+                app:cardBackgroundColor="#e0e5ec"
                 app:cardCornerRadius="8dp">
 
                 <LinearLayout
@@ -351,8 +359,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Total tests"
-                        android:textColor="@color/orange"
-                        android:textSize="15sp" />
+                        android:textColor="#FF5100"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
 
                     <TextView
                         android:id="@+id/world_tests_textView"
@@ -360,8 +369,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:gravity="center"
-                        android:textColor="#fff"
-                        android:textSize="14sp" />
+                        android:textColor="#313A49"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -381,7 +391,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="8dp"
-                app:cardBackgroundColor="@color/bg_light"
+                app:cardBackgroundColor="@color/Blue"
                 app:cardCornerRadius="8dp">
 
                 <LinearLayout
@@ -401,7 +411,7 @@
                         android:ellipsize="end"
                         android:lines="1"
                         android:text="Country Data"
-                        android:textColor="@color/pink"
+                        android:textColor="@color/white"
                         android:textSize="15sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

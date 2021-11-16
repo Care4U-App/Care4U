@@ -4,18 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Homescreen"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    tools:context=".Food_For_You">
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout4"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
     <TextView
@@ -33,17 +35,17 @@
 
 
     <TextView
-        android:id="@+id/greeting_name"
-        android:layout_width="350dp"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/montserrat"
-        android:gravity="center_horizontal"
+        android:gravity="center"
+        android:text="We have selected best foods for you"
         android:textColor="@color/white"
-        android:textSize="16dp"
+        android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -51,21 +53,21 @@
         android:id="@+id/gridLayout"
         android:layout_width="350dp"
         android:layout_height="350dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="48dp"
         android:alignmentMode="alignMargins"
         android:columnCount="2"
         android:columnOrderPreserved="false"
-        android:padding="10dp"
+        android:padding="15dp"
         android:rowCount="2"
-        app:layout_constraintEnd_toEndOf="@+id/greeting_name"
-        app:layout_constraintStart_toStartOf="@+id/greeting_name"
-        app:layout_constraintTop_toBottomOf="@+id/greeting_name">
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/selftest"
-            android:layout_width="155dp"
-            android:layout_height="155dp"
+            android:id="@+id/cereal"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_row="1"
             android:layout_column="0"
             android:layout_gravity="center"
@@ -78,34 +80,39 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:layout_marginTop="5dp"
                 android:orientation="vertical"
-                android:padding="20dp">
+                android:padding="10dp">
 
                 <ImageView
-                    android:layout_width="90dp"
+                    android:layout_width="80dp"
                     android:layout_height="90dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/notes"></ImageView>
+                    android:src="@drawable/bread1">
+
+                </ImageView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:fontFamily="@font/montserrat"
-                    android:text="Self COVID Test"
-                    android:textColor="@color/black"
-                    android:textSize="10dp"
                     android:layout_marginTop="5dp"
-                    android:textStyle="bold"></TextView>
+                    android:fontFamily="@font/montserrat"
+                    android:text="Cereals"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold">
+
+                </TextView>
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/covidtracker"
-            android:layout_width="155dp"
-            android:layout_height="155dp"
+            android:id="@+id/veg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_row="0"
             android:layout_column="0"
             android:layout_gravity="center"
@@ -118,14 +125,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:layout_marginTop="5dp"
                 android:orientation="vertical"
-                android:padding="20dp">
+                android:padding="10dp">
 
                 <ImageView
-                    android:layout_width="90dp"
-                    android:layout_height="93dp"
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/graph">
+                    android:src="@drawable/lettuce">
 
                 </ImageView>
 
@@ -133,11 +141,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:fontFamily="@font/montserrat"
-                    android:text="Live Covid Cases"
-                    android:textColor="@color/black"
                     android:layout_marginTop="5dp"
-                    android:textSize="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Vegies"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
                     android:textStyle="bold">
 
                 </TextView>
@@ -147,9 +155,9 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/vaccine_slot"
-            android:layout_width="155dp"
-            android:layout_height="155dp"
+            android:id="@+id/fruits"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_row="1"
             android:layout_column="1"
             android:layout_gravity="center"
@@ -162,14 +170,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:layout_marginTop="5dp"
                 android:orientation="vertical"
-                android:padding="20dp">
+                android:padding="10dp">
 
                 <ImageView
-                    android:layout_width="90dp"
+                    android:layout_width="80dp"
                     android:layout_height="90dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/slot">
+                    android:src="@drawable/watermelon1">
 
                 </ImageView>
 
@@ -177,21 +186,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:fontFamily="@font/montserrat"
-                    android:text="Vaccine Slot"
-                    android:textColor="@color/black"
-                    android:textSize="10dp"
                     android:layout_marginTop="5dp"
-                    android:textStyle="bold"></TextView>
+                    android:fontFamily="@font/montserrat"
+                    android:text="Fruits"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold">
+
+                </TextView>
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/Safety"
-            android:layout_width="155dp"
-            android:layout_height="155dp"
+            android:id="@+id/protein"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_row="0"
             android:layout_column="1"
             android:layout_gravity="center"
@@ -204,25 +215,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:layout_marginTop="5dp"
                 android:orientation="vertical"
-                android:padding="20dp">
+                android:padding="10dp">
 
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="90dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/shield"></ImageView>
+                    android:src="@drawable/chicken">
+
+                </ImageView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:fontFamily="@font/montserrat"
                     android:layout_marginTop="5dp"
-                    android:text="Safety Tips"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Protein"
                     android:textColor="@color/black"
-                    android:textSize="10dp"
-                    android:textStyle="bold"></TextView>
+                    android:textSize="15dp"
+                    android:textStyle="bold">
+
+                </TextView>
 
             </LinearLayout>
 
@@ -243,98 +259,21 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/gridLayout"
         app:layout_constraintTop_toBottomOf="@+id/gridLayout"
-        app:layout_constraintVertical_bias="0.17">
+        app:layout_constraintVertical_bias="0.417">
 
         <Button
-            android:id="@+id/QRCode"
-            android:layout_width="145dp"
+            android:id="@+id/f2home"
+            android:layout_width="160dp"
             android:layout_height="45dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/button"
             android:fontFamily="@font/montserrat"
-            android:onClick="book"
-            android:text="Verify via QR"
+            android:text="Back to Home"
             android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="12dp"
-            tools:ignore="OnClick">
+            android:textColor="@color/white">
 
         </Button>
-
-        <Button
-            android:id="@+id/food"
-            android:layout_width="155dp"
-            android:layout_height="45dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="1dp"
-            android:background="@drawable/button"
-            android:fontFamily="@font/montserrat"
-            android:onClick="book"
-            android:text="Food For You"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="12dp"
-            tools:ignore="OnClick">
-
-        </Button>
-
 
     </LinearLayout>
-
-    <RelativeLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="383dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="16dp"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal|center_vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-        <ImageButton
-            android:id="@+id/menu"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="218dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginBottom="11dp"
-            android:layout_toEndOf="@+id/logout"
-            android:background="@drawable/menu"
-            android:onClick="showPopup"
-
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/logout"
-            android:layout_width="80dp"
-            android:layout_height="35dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginBottom="4dp"
-            android:background="@drawable/stroke_button"
-            android:elevation="5dp"
-            android:fontFamily="@font/montserrat"
-            android:gravity="center"
-            android:shadowRadius="10"
-            android:text="Logout"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="12dp"
-            tools:layout_editor_absoluteX="25dp"
-            tools:layout_editor_absoluteY="22dp" />
-
-    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

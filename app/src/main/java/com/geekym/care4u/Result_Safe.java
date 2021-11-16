@@ -33,16 +33,16 @@ public class Result_Safe extends AppCompatActivity {
         SharedPreferences st = getApplicationContext().getSharedPreferences("scanned", Context.MODE_PRIVATE);
         result=st.getString("res", "");
 
-        if(result.equals("None")){
+        if(result.equals("tus5s82@fjt")){
           //  Dis.setBackgroundResource(R.drawable.none);
             Dis.setImageDrawable(getResources().getDrawable(R.drawable.none));
             Stat.setText("Status: UNSAFE!");
             Desc.setText("The User is Not Vaccinated!");
-        }else  if(result.equals("Half")) {
+        }else  if(result.equals("cwrn29328nvfhr")) {
             Dis.setImageDrawable(getResources().getDrawable(R.drawable.half));
             Stat.setText("Status: PARTIALLY SAFE");
             Desc.setText("The User is Partially Vaccinated!");
-        }else if(result.equals("Full")){
+        }else if(result.equals("we0rmi3ir29njd")){
             Dis.setImageDrawable(getResources().getDrawable(R.drawable.full));
             Stat.setText("Status: SAFE!");
             Desc.setText("The User is Fully Vaccinated!");

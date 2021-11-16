@@ -1,5 +1,6 @@
 package com.geekym.care4u;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
@@ -12,6 +13,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.itextpdf.text.pdf.PdfReader;
 import com.itextpdf.text.pdf.parser.PdfTextExtractor;
 import java.io.FileNotFoundException;
@@ -26,8 +35,11 @@ public class Vaccine_Details extends AppCompatActivity {
     private Button choose, home;
     TextView path;
     Integer Flag = 0;
-    String status;
+    String status, namecheck;
     SharedPreferences st;
+    private FirebaseUser user;
+    private DatabaseReference reference;
+    private String userID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +52,24 @@ public class Vaccine_Details extends AppCompatActivity {
         path = findViewById(R.id.path);
         home = findViewById(R.id.conf);
         st = getSharedPreferences("vacc_details", Context.MODE_PRIVATE);
+        //Firebase get username
+        user = FirebaseAuth.getInstance().getCurrentUser();
+        reference = FirebaseDatabase.getInstance().getReference("Users");
+        userID = user.getUid();
+
+        reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                Users userprofile = snapshot.getValue(Users.class);
+                if (userprofile != null){
+                    namecheck = userprofile.name;
+                }
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                namecheck = "";
+            }
+        });
 
         //To select PDF (COVID-19 Vaccination Certificate)
         choose.setOnClickListener(new View.OnClickListener() {
@@ -55,8 +85,9 @@ public class Vaccine_Details extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Vaccine_Details.this, Homescreen.class);
                 if(Flag==0){                //This means no PDF is selected
-                    Toast.makeText(Vaccine_Details.this, "Not Verified!", Toast.LENGTH_SHORT).show();
-                    status = "None";
+                    Toast.makeText(Vaccine_Details.this, "User and Certificate Not Verified!", Toast.LENGTH_SHORT).show();
+                    //status = "None";
+                    status = "tus5s82@fjt";
                     SharedPreferences.Editor editor = st.edit();
                     editor.putString("status", status);
                     editor.commit();
@@ -64,7 +95,8 @@ public class Vaccine_Details extends AppCompatActivity {
                     finish();
                 }else  if(Flag==1) {        //This means 1st Dose Vaccination Certificate if selected
                     Toast.makeText(Vaccine_Details.this, "Verified! Partially Vaccinated", Toast.LENGTH_SHORT).show();
-                    status = "Half";
+                    //status = "Half";
+                    status = "cwrn29328nvfhr";
                     SharedPreferences.Editor editor = st.edit();
                     editor.putString("status", status);
                     editor.commit();
@@ -72,7 +104,8 @@ public class Vaccine_Details extends AppCompatActivity {
                     finish();
                 }else if(Flag==2){          //This means 2nd Dose Vaccination Certificate if selected
                     Toast.makeText(Vaccine_Details.this, "Verified! Fully Vaccinated", Toast.LENGTH_SHORT).show();
-                    status = "Full";
+                    //status = "Full";
+                    status = "we0rmi3ir29njd";
                     SharedPreferences.Editor editor = st.edit();
                     editor.putString("status", status);
                     editor.commit();
@@ -121,9 +154,9 @@ public class Vaccine_Details extends AppCompatActivity {
                         reader = new PdfReader(inputStream);
                         content = PdfTextExtractor.getTextFromPage(reader, 1);
                         builder.append(content);
-                        if(content.contains("Fully Vaccinated")){
+                        if(content.contains("Fully Vaccinated") && content.contains(namecheck)){
                             Flag=2;
-                        }else if(content.contains("Partially Vaccinated") || content.contains("Provisional Certificate for COVID-19 Vaccination")){
+                        }else if(content.contains("Partially Vaccinated") || content.contains("Provisional Certificate for COVID-19 Vaccination") && content.contains(namecheck)){
                             Flag=1;
                         }
                     }
