@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/background"
+        android:padding="10dp"
         android:orientation="vertical">
 
         <EditText
@@ -18,15 +19,16 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_margin="8dp"
-            android:background="@color/bg_light"
+            android:background="@color/white"
             android:drawableStart="@drawable/search"
+            android:drawableTint="@color/Dark_Blue"
             android:drawablePadding="10dp"
             android:hint="Search"
             android:maxLines="1"
             android:paddingStart="10dp"
             android:singleLine="true"
-            android:textColor="#fff"
-            android:textColorHint="@color/gray"
+            android:textColor="@color/Dark_Blue"
+            android:textColorHint="@color/Dark_Blue"
             tools:ignore="RtlSymmetry"
             android:paddingLeft="10dp"
             android:drawableLeft="@drawable/search" />
@@ -39,7 +41,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="2dp"
             android:layout_marginRight="5dp"
-            app:cardBackgroundColor="@color/bg_light"
+            app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="8dp">
 
             <LinearLayout
@@ -72,7 +74,7 @@
                     android:gravity="start"
                     android:lines="1"
                     android:text="Total Cases"
-                    android:textColor="@color/yellow"
+                    android:textColor="@color/red"
                     android:textSize="14sp" />
 
             </LinearLayout>
