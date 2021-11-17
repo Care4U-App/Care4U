@@ -12,7 +12,7 @@ import android.widget.Switch;
 
 public class Self_Assessment extends AppCompatActivity {
 
-    CheckBox fever,cough,tired,headache,tastesmell,breath,chestpain,sorethroat,diarrhoea;
+    CheckBox fever,cough,tired,headache,tastesmell,breath,chestpain,sorethroat,diarrhoea, cardiac, diab, kidliv, cancer, asthma;
     Switch qstncheck;
     Integer i=0;
     Button button, Home;
@@ -35,6 +35,11 @@ public class Self_Assessment extends AppCompatActivity {
         headache = findViewById(R.id.headache);
         button = findViewById(R.id.button);
         Home = findViewById(R.id.backhome);
+        asthma = findViewById(R.id.asthma);
+        kidliv = findViewById(R.id.kidliv);
+        cardiac = findViewById(R.id.cardiac);
+        diab = findViewById(R.id.diab);
+        cancer = findViewById(R.id.cancer);
 
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,10 +55,10 @@ public class Self_Assessment extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (qstncheck.isPressed()){
                     if (qstncheck.isChecked()){
-                        i+=30;
+                        i+=40;
                     }
                     else{
-                        i-=30;
+                        i-=40;
                     }
                 }
 
@@ -64,47 +69,87 @@ public class Self_Assessment extends AppCompatActivity {
     public void onCheckboxClicked(View view) {
         boolean checked = ((CheckBox) view).isChecked();
         switch (view.getId()){
+            case R.id.cardiac:
+                if(cardiac.isPressed()){
+                    if(checked){
+                        i+=35;
+                    }else{
+                        i-=35;
+                    }
+                }
+            case R.id.cancer:
+                if(cancer.isPressed()) {
+                    if (checked) {
+                        i += 45;
+                    } else {
+                        i -= 45;
+                    }
+                }
+            case R.id.asthma:
+                if(asthma.isPressed()){
+                    if(checked){
+                        i+=47;
+                    }else{
+                        i-=47;
+                    }
+                }
+            case R.id.diab:
+                if(diab.isPressed()){
+                    if(checked){
+                        i+=40;
+                    }else{
+                        i-=40;
+                    }
+                }
+            case R.id.kidliv:
+                if(kidliv.isPressed()){
+                    if(checked){
+                        i+=45;
+                    }else{
+                        i-=45;
+                    }
+                }
             case R.id.cough:
                 if (cough.isPressed()){
                     if (checked){
-                        i+=7;
+                        i+=8;
                     }
                     else{
-                        i-=7;
+                        i-=8;
                     }
                 }
             case R.id.fever:
                 if (fever.isPressed()) {
                     if (checked) {
-                        i += 7;
+                        i += 10;
                     } else {
-                        i -= 7;
+                        i -= 10;
                     }
                 }
             case R.id.tired:
                 if (tired.isPressed()) {
                     if (checked) {
-                        i += 6;
+                        i += 3;
                     } else {
-                        i -= 6;
+                        i -= 3;
                     }
                 }
             case R.id.tastesmell:
                 if (tastesmell.isPressed()){
                     if (checked){
-                        i+=15;
+                        i+=40;
                     }
                     else{
-                        i-=15;
+                        i-=40;
                     }
                 }
             case R.id.breath:
                 if (breath.isPressed()){
                     if (checked){
-                        i+=15;
+                        i+=40;
                     }
                     else{
-                        i-=15;
+                        i-=40;
                     }
                 }
             case R.id.chestpain:
@@ -119,28 +164,28 @@ public class Self_Assessment extends AppCompatActivity {
             case R.id.sorethroat:
                 if (sorethroat.isPressed()){
                     if (checked){
-                        i+=2;
+                        i+=3;
                     }
                     else{
-                        i-=2;
+                        i-=3;
                     }
                 }
             case R.id.diarrhoea:
                 if (diarrhoea.isPressed()){
                     if (checked){
-                        i+=7;
+                        i+=8;
                     }
                     else{
-                        i-=7;
+                        i-=8;
                     }
                 }
             case R.id.headache:
                 if (headache.isPressed()){
                     if (checked){
-                        i+=7;
+                        i+=5;
                     }
                     else{
-                        i-=7;
+                        i-=5;
                     }
                 }
                 break;

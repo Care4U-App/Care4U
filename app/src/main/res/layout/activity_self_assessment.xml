@@ -13,53 +13,142 @@
         android:gravity="center_horizontal|center_vertical"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:id="@+id/linearLayout5"
-            android:layout_width="340dp"
-            android:layout_height="118dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginRight="32dp"
-            android:gravity="center_vertical|center_horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView"
-                android:layout_width="340dp"
-                android:layout_height="118dp"
-                app:cardBackgroundColor="@color/blue"
-                app:cardCornerRadius="14dp"
-                app:cardElevation="40dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.492"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:fontFamily="@font/montserrat"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:text="Hey are you feeling weak?\nLet's have a quick checkup"
-                    android:textColor="@color/white"
-                    android:textSize="20sp" />
-
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/linearLayout2"
             android:layout_width="294dp"
             android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:layout_marginTop="30dp"
             android:orientation="vertical"
+            android:padding="5dp"
             app:layout_constraintEnd_toEndOf="@+id/linearLayout5"
             app:layout_constraintStart_toStartOf="@+id/linearLayout5"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Existing Health Issues"
+                android:textColor="@color/blue"
+                android:textSize="20dp"></TextView>
+
+            <CheckBox
+                android:id="@+id/cardiac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:onClick="onCheckboxClicked"
+                android:scaleX="1.07"
+                android:scaleY="1.07"
+                android:text="Heart Disease"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                app:layout_constraintVertical_bias="0.079" />
+
+            <CheckBox
+                android:id="@+id/cancer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:onClick="onCheckboxClicked"
+                android:scaleX="1.07"
+                android:scaleY="1.07"
+                android:text="Cancer"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                app:layout_constraintVertical_bias="0.079" />
+
+            <CheckBox
+                android:id="@+id/asthma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:onClick="onCheckboxClicked"
+                android:scaleX="1.07"
+                android:scaleY="1.07"
+                android:text="Asthma | Lungs Disease"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                app:layout_constraintVertical_bias="0.079" />
+
+            <CheckBox
+                android:id="@+id/diab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:onClick="onCheckboxClicked"
+                android:scaleX="1.07"
+                android:scaleY="1.07"
+                android:text="Diabetes and obesity"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                app:layout_constraintVertical_bias="0.079" />
+
+            <CheckBox
+                android:id="@+id/kidliv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:onClick="onCheckboxClicked"
+                android:scaleX="1.07"
+                android:scaleY="1.07"
+                android:text="kidney or liver disease"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                app:layout_constraintVertical_bias="0.079" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Covid Symptoms"
+                android:textColor="@color/blue"
+                android:textSize="20dp">
+
+            </TextView>
 
             <CheckBox
                 android:id="@+id/fever"

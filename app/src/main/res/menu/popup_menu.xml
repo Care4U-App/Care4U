@@ -8,6 +8,4 @@
         android:title="Reset All Data"/>
     <item android:id="@+id/help"
         android:title="Need Help?"/>
-    <item android:id="@+id/beneficialid"
-        android:title="Update Benificaily ID"/>
 </menu>

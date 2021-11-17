@@ -15,7 +15,7 @@ import android.widget.Toast;
 public class User_Details extends AppCompatActivity {
 
     //Here we declare variables
-    EditText age, weight, height, bpm, bid;
+    EditText age, weight, height, bid;
     Button confirm;
     SharedPreferences sp, up, ud;
 
@@ -30,7 +30,6 @@ public class User_Details extends AppCompatActivity {
         confirm = findViewById(R.id.conf);
         weight = findViewById(R.id.weight_input);
         height = findViewById(R.id.height_input);
-        bpm = findViewById(R.id.bpm_input);
         bid = findViewById(R.id.bid);
         sp = getSharedPreferences("user_details", Context.MODE_PRIVATE);
 
@@ -50,11 +49,7 @@ public class User_Details extends AppCompatActivity {
                     String txt_age = age.getText().toString();
                     String txt_height = height.getText().toString();
                     String txt_weight = weight.getText().toString();
-                    String txt_bpm = bpm.getText().toString();
                     String txt_bid = bid.getText().toString();
-                    if(txt_bpm.equals("")){
-                        txt_bpm = "NULL";
-                    }
                     if(txt_weight.equals("")){
                         txt_weight = "NULL";
                     }
@@ -67,7 +62,6 @@ public class User_Details extends AppCompatActivity {
                     editor.putString("saved_bid", txt_bid);
                     editor.putString("saved_height", txt_height);
                     editor.putString("saved_weight", txt_weight);
-                    editor.putString("saved_bpm", txt_bpm);
                     editor.commit();
 
                     if (Check.equals("true")) {     //Called from Homescreen (Update)

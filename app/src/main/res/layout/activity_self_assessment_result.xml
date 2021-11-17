@@ -11,7 +11,7 @@
         android:id="@+id/progress"
         android:layout_width="196dp"
         android:layout_height="196dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="52dp"
         android:foregroundGravity="center"
         app:donut_finished_color="@color/red"
         app:donut_finished_stroke_width="15dp"
@@ -97,7 +97,7 @@
         android:id="@+id/status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/montserrat"
         android:text="Status"
         android:textColor="@color/white"
@@ -110,22 +110,50 @@
         android:id="@+id/linearLayout6"
         android:layout_width="321dp"
         android:layout_height="142dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="12dp"
         android:gravity="center_horizontal|center_vertical"
-        app:layout_constraintEnd_toEndOf="@+id/status"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="@+id/status"
-        app:layout_constraintTop_toBottomOf="@+id/status">
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <TextView
             android:id="@+id/desc"
-            android:gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat"
+            android:gravity="center"
             android:text="Description"
             android:textColor="@color/white"
-            android:textSize="15dp" />
+            android:textSize="18dp" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="227dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Age: "
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/status"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/status"
+        app:layout_constraintTop_toBottomOf="@+id/status" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="228dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:text="BMI: "
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
