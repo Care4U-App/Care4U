@@ -57,50 +57,20 @@ public class Self_Assessment_Result extends AppCompatActivity {
             status.setText("Safe-Zone");
             desc.setText("You're Safe Now. Follow proper safety Tips");
         }
-        else if(prog>=8 && prog<=14)
-        {
-            status.setText("Safe-Zone");
-            desc.setText("You're Safe Now. Take care");
-        }
-        else if(prog>=15 && prog<=21)
-        {
-            status.setText("Minimum Risk");
-            desc.setText("You're Safe Now. Take care and monitor your health regularly");
-        }
-        else if(prog>=22 && prog<=28)
+        else if(prog>7 && prog<=14)
         {
             status.setText("Low Risk");
             desc.setText("You're are at low risk, take care and proper medications");
         }
-        else if(prog>=29 && prog<=40)
-        {
-            status.setText("Low Risk");
-            desc.setText("You're are at low risk, take care and proper medications");
-        }
-        else if(prog>=41 && prog<=51)
+        else if(prog>=15 && prog<=29)
         {
             status.setText("Medium Risk");
-            desc.setText("Your health is still serious, contact your doctor and self quarantine yourself");
+            desc.setText("Your health is still serious, consult a doctor and self quarantine yourself");
         }
-        else if(prog>=52 && prog<=65)
-        {
-            status.setText("Medium Risk");
-            desc.setText("Your health is still critical, contact your doctor and self quarantine yourself");
-        }
-        else if(prog>=66 && prog<=75)
+        else if(prog>=30 && prog<=60)
         {
             status.setText("High Risk");
-            desc.setText("Please don't go outside, take proper care and contact your Doctor immediately");
-        }
-        else if(prog>=76 && prog<=80)
-        {
-            status.setText("Critical Situation");
-            desc.setText("Consult a Doctor Immediately!");
-        }
-        else if(prog>=81 && prog<=85)
-        {
-            status.setText("Critical Situation");
-            desc.setText("Consult a Doctor Immediately and Please Take Care!");
+            desc.setText("Please don't go outside, take proper care and consult a Doctor immediately");
         }
         else
         {
@@ -108,7 +78,6 @@ public class Self_Assessment_Result extends AppCompatActivity {
             desc.setText("Consult a Doctor Immediately, you're at really High Risk!");
         }
     }
-
     public void back(View view) {
         Intent intent = new Intent(Self_Assessment_Result.this,Self_Assessment.class);
         startActivity(intent);

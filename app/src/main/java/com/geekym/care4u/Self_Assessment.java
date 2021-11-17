@@ -50,10 +50,10 @@ public class Self_Assessment extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (qstncheck.isPressed()){
                     if (qstncheck.isChecked()){
-                        i+=37;
+                        i+=30;
                     }
                     else{
-                        i-=37;
+                        i-=30;
                     }
                 }
 
@@ -84,45 +84,45 @@ public class Self_Assessment extends AppCompatActivity {
             case R.id.tired:
                 if (tired.isPressed()) {
                     if (checked) {
-                        i += 7;
+                        i += 6;
                     } else {
-                        i -= 7;
+                        i -= 6;
                     }
                 }
             case R.id.tastesmell:
                 if (tastesmell.isPressed()){
                     if (checked){
-                        i+=7;
+                        i+=15;
                     }
                     else{
-                        i-=7;
+                        i-=15;
                     }
                 }
             case R.id.breath:
                 if (breath.isPressed()){
                     if (checked){
-                        i+=7;
+                        i+=15;
                     }
                     else{
-                        i-=7;
+                        i-=15;
                     }
                 }
             case R.id.chestpain:
                 if (chestpain.isPressed()){
                     if (checked){
-                        i+=7;
+                        i+=4;
                     }
                     else{
-                        i-=7;
+                        i-=4;
                     }
                 }
             case R.id.sorethroat:
                 if (sorethroat.isPressed()){
                     if (checked){
-                        i+=7;
+                        i+=2;
                     }
                     else{
-                        i-=7;
+                        i-=2;
                     }
                 }
             case R.id.diarrhoea:

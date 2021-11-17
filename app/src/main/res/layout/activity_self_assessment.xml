@@ -156,7 +156,7 @@
                 android:onClick="onCheckboxClicked"
                 android:scaleX="1.07"
                 android:scaleY="1.07"
-                android:text="Taste and Smell"
+                android:text="Loss of Taste and Smell"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
