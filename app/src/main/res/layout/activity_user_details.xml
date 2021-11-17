@@ -18,11 +18,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/montserrat"
         android:text="Care4U"
         android:textColor="@color/white"
@@ -30,7 +31,6 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
 
     <TextView
         android:id="@+id/textView3"
@@ -50,7 +50,7 @@
         android:id="@+id/age_input"
         android:layout_width="336dp"
         android:layout_height="55dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/stroke_button"
         android:gravity="center"
         android:hint="Enter your Age *"
@@ -58,6 +58,7 @@
         android:inputType="numberDecimal"
         android:textColorHint="#BDBDBD"
         app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -73,6 +74,7 @@
         android:inputType="numberDecimal"
         android:textColorHint="#BDBDBD"
         app:layout_constraintEnd_toEndOf="@+id/weight_input"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/weight_input"
         app:layout_constraintTop_toBottomOf="@+id/weight_input" />
 
@@ -88,6 +90,7 @@
         android:inputType="numberDecimal"
         android:textColorHint="#BDBDBD"
         app:layout_constraintEnd_toEndOf="@+id/bpm_input"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/bpm_input"
         app:layout_constraintTop_toBottomOf="@+id/bpm_input" />
 
@@ -102,6 +105,23 @@
         android:includeFontPadding="true"
         android:inputType="numberDecimal"
         android:textColorHint="#BDBDBD"
+        app:layout_constraintEnd_toEndOf="@+id/bid"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bid"
+        app:layout_constraintTop_toBottomOf="@+id/bid" />
+
+    <EditText
+        android:id="@+id/bid"
+        android:layout_width="336dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/stroke_button"
+        android:gravity="center"
+        android:hint="Beneficiary Reference ID*"
+        android:includeFontPadding="true"
+        android:maxLength="14"
+        android:inputType="numberDecimal"
+        android:textColorHint="#BDBDBD"
         app:layout_constraintEnd_toEndOf="@+id/age_input"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/age_input"
@@ -111,14 +131,14 @@
         android:id="@+id/conf"
         android:layout_width="272dp"
         android:layout_height="55dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="68dp"
         android:background="@drawable/button"
         android:fontFamily="@font/montserrat"
         android:text="Confirm"
         android:textAllCaps="false"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/height_input"
-        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="@+id/height_input"
         app:layout_constraintTop_toBottomOf="@+id/height_input" />
 
