@@ -39,7 +39,7 @@ public class Vaccine_Details extends AppCompatActivity {
     SharedPreferences st;
     private FirebaseUser user;
     private DatabaseReference reference;
-    private String userID;
+    private String userID, bfid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +56,10 @@ public class Vaccine_Details extends AppCompatActivity {
         user = FirebaseAuth.getInstance().getCurrentUser();
         reference = FirebaseDatabase.getInstance().getReference("Users");
         userID = user.getUid();
+
+        SharedPreferences sp = getApplicationContext().getSharedPreferences("user_details", Context.MODE_PRIVATE);
+        String bid = sp.getString("saved_bid", "");         //BID details
+        bfid = bid;
 
         reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -154,9 +158,9 @@ public class Vaccine_Details extends AppCompatActivity {
                         reader = new PdfReader(inputStream);
                         content = PdfTextExtractor.getTextFromPage(reader, 1);
                         builder.append(content);
-                        if(content.contains("Fully Vaccinated") && content.contains(namecheck)){
+                        if(content.contains("Fully Vaccinated") && content.contains(namecheck) && content.contains(bfid)){
                             Flag=2;
-                        }else if(content.contains("Partially Vaccinated") || content.contains("Provisional Certificate for COVID-19 Vaccination") && content.contains(namecheck)){
+                        }else if(content.contains("Partially Vaccinated") || content.contains("Provisional Certificate for COVID-19 Vaccination") && content.contains(namecheck) && content.contains(bfid)){
                             Flag=1;
                         }
                     }

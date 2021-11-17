@@ -21,7 +21,7 @@ public class OBS extends AppCompatActivity {
     LinearLayout dotsLayout;
     SliderAdapter sliderAdapter;
     TextView[] dots;
-    Button getstarted;
+    Button getstarted,nextbtn;
     Animation animation;
     int currentPosition;
 
@@ -35,6 +35,7 @@ public class OBS extends AppCompatActivity {
         viewPager = findViewById(R.id.slider);
         dotsLayout = findViewById(R.id.dots);
         getstarted = findViewById(R.id.get_started_btn);
+        nextbtn = findViewById(R.id.next_btn);
 
         sliderAdapter = new SliderAdapter(this);
         viewPager.setAdapter(sliderAdapter);
@@ -91,6 +92,7 @@ public class OBS extends AppCompatActivity {
             }else {
                 animation = AnimationUtils.loadAnimation(OBS.this,R.anim.bottom_anim);
                 getstarted.setAnimation(animation);
+                nextbtn.setVisibility(View.INVISIBLE);
                 getstarted.setVisibility(View.VISIBLE);
             }
         }
