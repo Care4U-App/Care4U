@@ -8,9 +8,11 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.geekym.care4u.HomeScreen.Homescreen;
+import com.geekym.care4u.authentication.Vaccine_Details;
 
 public class User_Details extends AppCompatActivity {
 
@@ -70,12 +72,12 @@ public class User_Details extends AppCompatActivity {
                         editor1.putString("update_ud","false");
                         editor1.apply();
                         Toast.makeText(User_Details.this, "Saved Successfully!", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(User_Details.this,Homescreen.class);
+                        Intent intent = new Intent(User_Details.this, Homescreen.class);
                         startActivity(intent);
                         finish();
                         }else{
                         Toast.makeText(User_Details.this, "Saved Successfully!", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(User_Details.this,Vaccine_Details.class);
+                        Intent intent = new Intent(User_Details.this, Vaccine_Details.class);
                         startActivity(intent);
                         finish();
                     }

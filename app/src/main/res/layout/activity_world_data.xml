@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/main_refreshLayout"
     android:background="@drawable/background"
-    tools:context=".CovidCases.WorldDataActivity">
+    tools:context=".HomeScreen.CovidCases.WorldDataActivity">
 
 
     <LinearLayout

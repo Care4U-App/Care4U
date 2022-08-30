@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".Self_Assessment_Result">
+    tools:context=".HomeScreen.selfAssessment.Self_Assessment_Result">
 
     <com.github.lzyzsd.circleprogress.DonutProgress
         android:id="@+id/progress"

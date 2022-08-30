@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/transparent"
     android:backgroundTint="@color/transparent"
-    tools:context=".SignUpFragment">
+    tools:context=".authentication.SignUpFragment">
 
     <EditText
         android:id="@+id/passsignup"
