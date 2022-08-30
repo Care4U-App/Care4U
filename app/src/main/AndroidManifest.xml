@@ -21,46 +21,46 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Care4U">
         <activity
-            android:name=".Fruits"
+            android:name=".HomeScreen.FoodForYou.Fruits"
             android:exported="false" />
         <activity
-            android:name=".Vegetables"
+            android:name=".HomeScreen.FoodForYou.Vegetables"
             android:exported="false" />
         <activity
-            android:name=".Protiens"
+            android:name=".HomeScreen.FoodForYou.Protiens"
             android:exported="false" />
         <activity
-            android:name=".Cereals"
+            android:name=".HomeScreen.FoodForYou.Cereals"
             android:exported="false" />
         <activity
-            android:name=".Food_For_You"
+            android:name=".HomeScreen.FoodForYou.Food_For_You"
             android:exported="false" />
         <activity
-            android:name=".VaccineSlot.Vaccine_Slot"
+            android:name=".HomeScreen.VaccineSlot.Vaccine_Slot"
             android:exported="false" />
         <activity
-            android:name=".ForgetPass"
+            android:name=".authentication.ForgetPass"
             android:exported="false" />
         <activity
-            android:name=".CovidCases.WorldDataActivity"
+            android:name=".HomeScreen.CovidCases.WorldDataActivity"
             android:exported="true" />
         <activity
-            android:name=".CovidCases.CountrywiseDataActivity"
+            android:name=".HomeScreen.CovidCases.CountrywiseDataActivity"
             android:exported="true" />
         <activity
-            android:name=".CovidCases.data.PerCountryData"
+            android:name=".HomeScreen.CovidCases.data.PerCountryData"
             android:exported="true" />
         <activity
-            android:name=".Self_Assessment_Result"
+            android:name=".HomeScreen.selfAssessment.Self_Assessment_Result"
             android:exported="false" />
         <activity
-            android:name=".Result_Safe"
+            android:name=".HomeScreen.Result_Safe"
             android:exported="false" />
         <activity
-            android:name=".Self_Assessment"
+            android:name=".HomeScreen.selfAssessment.Self_Assessment"
             android:exported="false" />
         <activity
-            android:name=".Login_Page"
+            android:name=".authentication.Login_Page"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -80,29 +80,29 @@
         </provider>
 
         <activity
-            android:name=".Vaccine_Details"
+            android:name=".authentication.Vaccine_Details"
             android:exported="true"
             android:largeHeap="true" />
         <activity
             android:name=".User_Details"
             android:exported="true" />
         <activity
-            android:name=".ScanQR"
+            android:name=".HomeScreen.vaccineCertificateValidation.ScanQR"
             android:exported="false" />
         <activity
-            android:name=".GenQR"
+            android:name=".HomeScreen.vaccineCertificateValidation.GenQR"
             android:exported="false" />
         <activity
-            android:name=".Safety_Tips"
+            android:name=".HomeScreen.Safety_Tips"
             android:exported="false" />
         <activity
-            android:name=".OBS"
+            android:name=".introduction.OBS"
             android:exported="true" />
         <activity
-            android:name=".Homescreen"
+            android:name=".HomeScreen.Homescreen"
             android:exported="true" />
         <activity
-            android:name=".Splashscreen"
+            android:name=".introduction.Splashscreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

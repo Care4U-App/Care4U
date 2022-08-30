@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".Food_For_You">
+    tools:context=".HomeScreen.FoodForYou.Food_For_You">
 
     <ImageView
         android:id="@+id/imageView2"
